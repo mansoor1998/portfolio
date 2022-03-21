@@ -1,0 +1,308 @@
+#app {
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+.title-size {
+    font-size: clamp(40px, 8vw, 80px)
+}
+
+.introduction {
+    /* margin-top: 15em;
+    margin-bottom: 15em; */
+    min-height: calc(100vh);
+    overflow: hidden;
+}
+
+
+.margin-t-large {
+    margin-top: 15em;
+}
+.margin-b-large {
+    /* margin-top: 15em; */
+    margin-bottom: 15em;
+}
+
+.margin-b-medium {
+    margin-bottom: 10em;
+}
+
+
+
+.numbered-para, .numbered-heading {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    /* font-size: clamp(26px,5vw,var(--fz-heading)); */
+    white-space: nowrap;
+}
+
+.numbered-para::before, .numbered-heading::before {
+    position: relative;
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: var(--props-color);
+    /* font-size: clamp(var(--fz-md),3vw,var(--fz-xl)); */
+    /* font-weight: 400; */
+}
+
+.numbered-heading::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: rgb(35, 53, 84);
+}
+
+#about .image img {
+    width: 280px;
+    border: 1px solid var(--props-color);
+    transition: box-shadow 200ms ease;
+}
+
+#about .image img:hover {
+    box-shadow: 0 0 11px var(--props-color);
+}
+
+
+/* other working projects. */
+
+.work > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.work > ul li {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+
+/* first child styles, an image */
+.work > ul li > div:first-child{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.work > ul li > div:first-child::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--navy-color);
+    opacity: 0.7;
+    transition: opacity 200ms ease;
+}
+
+.work > ul li > div:first-child:hover::before {
+    opacity: 0;
+}
+
+.work > ul li:nth-child(2n) > div:first-child {
+    grid-column: 1 / 8; 
+    grid-row: 1;
+}
+
+.work > ul li:nth-child(2n + 1) > div:first-child {
+    grid-column: 6 / 13; 
+    grid-row: 1;
+}
+
+.work > ul li:nth-child(2n + 1) > div:first-child > img {
+    object-fit: cover
+}
+
+/* ------------------------------- */
+
+/* second (last div) child styles, an information  */
+.work > ul li > div:last-child{
+    background-color: transparent;   
+    position: relative;
+    margin: auto 0;
+}
+
+.work > ul li:nth-child(2n) > div:last-child {
+    grid-column: 7 / 13; 
+    grid-row: 1;
+    text-align: right;
+}
+
+.work > ul li:nth-child(2n + 1) > div:last-child {
+    grid-column: 1 / 7; 
+    grid-row: 1;
+    text-align: left;
+}
+
+.work > ul li > div:last-child > div:nth-child(2) {
+    background-color: var(--light-navy);
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+/* ---------------------------- */
+
+
+/* Other project grid */
+.other-project > div {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+
+
+.other-project > div > div {
+    background-color: var(--light-navy);
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    padding: 1.2em;
+    border-radius: 0.25rem;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.other-project > div > div:hover {
+    transform: translateY(-5px) !important;
+}
+
+.other-project > div > div:hover h4 {
+    color: var(--props-color)
+}
+
+
+footer p {
+    width: min(500px, 100%);
+}
+
+/* left bar and right bar */
+
+.social-contact {
+    position: fixed;
+    bottom:0;
+    left: clamp(24px, calc((100vw - 1650px)/2), 100vw);
+}
+
+.social-contact ul li a{
+    position: relative;
+    top: 0;
+    transition: all 150ms ease;
+    color: var(--p-color);
+}
+
+.social-contact ul li a:hover {
+    top: -5px;
+    color: var(--props-color);
+}
+
+.bottom-line::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 1px;
+    height: 150px;
+    background-color: var(--font-color);
+}
+
+.email-contact {
+    position: fixed;
+    bottom: 0;
+    /* right: calc((100vw - 1500px - 130px)/2); */
+    right: clamp(40px - 130px, calc((100vw - 1650px - 130px)/2), 100vw);
+}
+
+.email-contact span {
+    --top-pos: -130px;
+    color: inherit;
+    position: relative;
+    top: var(--top-pos);
+    display: block;
+    transform: rotate(90deg);
+    transition: all 150ms ease;
+    cursor: pointer;
+    color: var(--font-color)
+}
+
+.email-contact span:hover {
+    top: calc(var(--top-pos) - 10px);
+    color: var(--props-color);
+}
+
+.email-contact::after {
+    content: "";
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #about .image img {
+        width: 250px;
+    }
+
+    .work > ul li:nth-child(2n) > div:first-child, .work > ul li:nth-child(2n) > div:last-child,
+    .work > ul li:nth-child(2n + 1) > div:first-child, .work > ul li:nth-child(2n + 1) > div:last-child {
+        grid-column: 1/ 13; 
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .work > ul li > div:last-child > div:nth-child(2) {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0 !important;
+    }
+
+    .work > ul li > div:last-child {
+        padding: 40px 20px;
+        cursor: pointer;
+        box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
+    }
+
+    .work > ul li > div:last-child p, .work > ul li > div:last-child h5, .work > ul li > div:last-child .text{
+        cursor: initial;
+    }
+
+    .work > ul li > div:first-child::before {
+        background-color: #0d2034;
+        opacity: 0.95;
+    }
+
+    .other-project > div {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    /* .email-contact, .social-contact {
+        display: none;
+    } */
+
+
+}
+
+@media only screen and (max-width: 1080px) {
+    .email-contact, .social-contact {
+        display: none;
+    }
+}
+
+#work:target ~ ul li a [href="#work"], 
+#about:target ~ ul li a,
+#experience:target ~ ul li a,
+#contact:target ~ ul li a {
+    color: var(--props-color) !important;
+}
+
+
+/* color of the work #0d2034 */
+
+
+/**/

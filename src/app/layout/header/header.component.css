@@ -1,0 +1,204 @@
+header {
+    background-color: rgba(10, 25, 47, 0.85);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: top 200ms, height 100ms;
+    z-index: 100000;
+    /* transition: top 300ms ease; */
+}
+
+.header-scroll {
+    box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
+    height: 70px
+}
+  
+  
+ .menu ul {
+  list-style-type: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+ .menu ul li .number {
+  color: var(--props-color);
+  margin-right: 4px;
+}
+  
+ .menu ul li a{
+  cursor: pointer;
+  transition: color 100ms ease-out;
+  transition-delay: 100ms;
+  font-family: 'ubuntu';
+  position: relative;
+}
+
+ .menu ul li button, .p-button {
+  border: 1px solid var(--props-color);
+  background-color: transparent;
+  color: var(--props-color);
+  transition: background-color 200ms ease-in;
+}
+
+ .menu ul li button:hover, .p-button:hover {
+  background-color: rgba(100, 255, 218, 0.3);
+} 
+
+
+ .menu ul li a:hover {
+  color: var(--props-color);
+}
+ .menu ul li:hover > li {
+  color: #000;
+}
+
+/* .nested-menu-bar {
+
+  --nested-menu-bar-top-pos: 35px;
+
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  list-style-type: none;
+  border-radius: 5px;
+  top: var(--nested-menu-bar-top-pos);
+  left: -5px;
+  visibility: hidden;
+  transition: opacity 200ms ease;
+  transition-delay: 100ms;
+  opacity: 0;
+}
+
+#main-menu .menu-bar .menu-item:hover > .nested-menu-bar {
+  visibility: visible;
+  opacity: 1;
+} */
+
+
+/* .login-btn {
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2em;
+  position: relative;
+}
+
+.login-btn::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  height: 2px;
+  background-color: #fff;
+  width: 0;
+  transition: width 100ms ease-in-out;
+}
+
+.login-btn:hover::after {
+  width: 100%;
+} */
+
+
+/* side nav bar */
+/* all css is the side nav */
+.nav-overlay {
+  z-index: 1000000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+}
+
+.side-navbar {
+  width: 280px;
+  background-color: #112240;
+  right: -280px;
+  transition: all 200ms ease;
+  z-index: 10000000000;
+  display: none;
+}
+
+/* menu hamburger styles. */
+#nav-icon {
+  width: 40px;
+  height: 26px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  margin-left: -37px;
+  left: -100px;
+  display: none;
+  opacity: 0;
+  font-family: 'BalsamiqSans', Roboto, "Helvetica Neue", sans-serif;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: var(--props-color);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 10px;
+}
+
+#nav-icon span:nth-child(3) {
+  top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  header .menu {
+    display: none;
+  }
+
+  header #nav-icon{
+    margin-left: 0;
+    left: 0;
+    display: block;
+    opacity: 1;
+  }
+  
+  .nav-overlay, 
+  .side-navbar {
+    display: block;
+  }
+
+  .side-navbar-open {
+    right: 0px;
+  }
+}
+  

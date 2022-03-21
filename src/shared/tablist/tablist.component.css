@@ -1,0 +1,88 @@
+.parent {
+    display: flex;
+}
+
+.tab-list {
+    position: relative;
+    width: max-content;
+    --line-height: 40px;
+}
+
+.parent div:nth-child(2) {
+    margin-left: 1.5rem;
+}
+
+.tab-list ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border-left: 1px solid #233554;
+    width: max-content;
+}
+
+.tab-list ul li {
+    vertical-align:middle;
+    /* display: inline-block; */
+    cursor: pointer;
+    transition: all 100ms ease;
+    height: var(--line-height);
+
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+.tab-list ul li:hover {
+    color: var(--props-color);
+    background-color: #112240;
+}
+
+.tab-list ul .selected {
+    color: var(--props-color);
+}
+
+.tab-list .line {
+    position: absolute;
+    /* height: var(--line-height);
+    width: 1px; */
+    /* width: 77px;
+    height:1px; */
+    background-color: var(--props-color);
+    top: 0;
+    transition: all 100ms ease-out;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .parent {
+        flex-direction: column;
+    }
+
+    .tab-list {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tab-list ul li {
+        padding-left: 1rem;
+        padding-right: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .parent div:nth-child(2) {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .tab-list ul {
+        border-left: none;
+        border-bottom: 1px solid #233554;
+    }
+
+    .tab-list ul li {
+        display: inline-block;
+    }
+
+    /* .tab-list .line {
+        display: none;
+    } */
+}

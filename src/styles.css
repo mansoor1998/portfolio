@@ -1,1 +1,172 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./assets/fonts/Ubuntu-Regular.ttf');
+    font-style: normal;
+}
+
+/* 
+    p - primary
+    s- secondary 
+*/
+
+:root {
+    --background: #0a192f;
+    --props-color: #64ffda;
+    --font-color: #8892b0;
+    --font-color-s: #ccd6f6;
+    --navy-color: #1d4853;
+    --light-navy: #112240;
+    --header-height: 100px;
+}
+
+.dark-layout {
+    --background: #0a192f
+}
+
+html, body {
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    color: #ffff;
+}
+
+ul {
+    padding: 0; margin: 0; list-style-type: none;
+}
+
+p, ul li, .p-color {
+    color: var(--font-color); 
+}
+
+.s-color {
+    color: var(--font-color-s);
+}
+
+.t-color {
+    color: var(--props-color);
+}
+
+.navy-color {
+    color: var(--navy-color)
+}
+
+.l-navy-theme {
+    background-color: var(--light-navy);
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+/* primary and secondry widths */
+.p-width {
+    width: min(900px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
+.s-width {
+    width: min(1000px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.p-button { 
+    /* p-button me-2 ms-2 d-inline p-2 rounded */
+    border: 1px solid var(--props-color);
+    background-color: transparent;
+    color: var(--props-color);
+    transition: background-color 200ms ease-in;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+
+.p-button:hover {
+    background-color: rgba(100, 255, 218, 0.3);
+}
+
+
+/* default anchor tag style */
+/* a:visited, a:focus, a:active {
+    outline: none; text-decoration: none; color: inherit;
+} */
+
+.anchor-p, .anchor-p:hover {
+    outline: none; text-decoration: none;
+    position: relative;
+    color: var(--props-color);
+}
+
+.anchor-p::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    max-width: 100%;
+    width: 0;
+    height: 1px;
+    background-color: var(--props-color);
+    transition: all 100ms ease-in;
+}
+
+
+.anchor-p:hover:after {
+    width: 100%;
+}
+
+/* anchor tag style if this class is used */
+.no-a-style, .no-a-style:hover, .no-a-style:visited, .no-a-style:focus, .no-a-style:active {
+    outline: none; text-decoration: none; color: inherit;
+}
+
+
+
+/* list style */
+.list-style { list-style-type: none; }
+.list-style li {
+    padding-left: 15px;
+    position: relative;
+}
+.list-style li::before {
+    content: "▹";
+    position: absolute;
+    color: var(--props-color);
+    font-weight: bold;
+    font-size: 24px;
+    display: inline-block;
+    top: -6px;
+    left: 0;
+    margin-left: -10px;
+    margin-right: 4px;
+}
+  
+/* scroll design */
+
+body::-webkit-scrollbar-track
+{
+    border-radius: 6px;
+    background-color: var(--background);    
+}
+ 
+body::-webkit-scrollbar
+{
+    width: 5px;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+ 
+body::-webkit-scrollbar-thumb
+{
+     border-radius: 6px;
+     background-color:  var(--font-color);
+     transition: all 200ms ease;
+     cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+
