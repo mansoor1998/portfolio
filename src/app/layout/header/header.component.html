@@ -1,0 +1,46 @@
+<header id="navbar" class="w-100 p-2 d-flex align-items-center" [ngClass]="{ 'header-scroll': show }">
+    <div class="d-flex align-items-center justify-content-between container">
+        <div class="logo">
+            <h3>M</h3>
+        </div>
+        <div class="menu">
+            <ul class="d-flex align-items-center" [@list]>
+                <li *ngFor="let item of menuItems" class="item">
+                    <a class="no-a-style" [href]="item.link">
+                        <span class="number">{{item.number}}.</span>
+                        {{item.name}}
+                    </a>
+                </li>
+                <li class="item">
+                    <button class="p-button">Resume</button>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-icon" (click)="toggleState = !toggleState">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<div class="nav-overlay" (click)="toggleState = false;" *ngIf="toggleState"></div>
+<nav [ngClass]="{ 'side-navbar-open': toggleState  }"
+    class="side-navbar position-fixed top-0 h-100 ps-2 d-flex align-items-center justify-content-center">
+
+    <!-- Navigation body -->
+    <section class="nav-body menu">
+        <ul class="d-flex flex-column align-items-center gap-5" [@list]>
+            <li *ngFor="let item of menuItems" class="item s-color">
+                <a class="no-a-style" [href]="item.link" (click)="closeNavbar()">
+                    <span style="cursor: pointer" class="text-center number t-color d-block">{{item.number}}.</span>
+                    {{item.name}}
+                </a>
+            </li>
+            <li class="item">
+                <button class="p-button">Resume</button>
+            </li>
+        </ul>
+    </section>
+
+</nav>
