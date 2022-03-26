@@ -34,6 +34,7 @@ export class ExperienceModel {
     public type: string = '';
     public profession: string = '';
     public company: string = '';
+    public companyUrl: string = '';
     public intro: string | string[] = ''; // if a string is wrapped between [] (sq brackets), it would be considered as a link
     public from: string = '';
     public to: string = '';
@@ -60,7 +61,7 @@ export class AppService {
     }
 
     public getExperience(): Observable<SanityModel<ExperiencesModel>> {
-        return this.http.get(`${this.url}/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'experiences'%20%26%26%20!(_id%20in%20path(%22drafts.**%22))%5D%0A%7B%20_id%2C%20list%2C%20type%20%7D`) as Observable<SanityModel<ExperiencesModel>>;
+        return this.http.get(`${this.url}/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'experiences'%20%26%26%20!(_id%20in%20path(%22drafts.**%22))%5D%0A%7C%20order(_createdAt)`) as Observable<SanityModel<ExperiencesModel>>;
     }
 
     public getIntroduction(): Observable<SanityModel<IntroductionModel>> {

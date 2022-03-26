@@ -41,7 +41,7 @@ import { ProjectModel, AppService, IntroductionModel, SanityModel, ExperienceMod
   ]
 })
 export class AppComponent {
-  public initP = 3;
+  public initP = 6;
   public p = this.initP;
 
   public random: boolean = false;
@@ -103,22 +103,37 @@ export class AppComponent {
 
   // seperate hyperlinks from paragraph and form an array. included patterns [text:hyperlink]
   public splitLinks(text: string) {
-    let split = text.split(' ');
-    const result = [''];
-    for (let word of split) {
-      if (this.isHyperLink(word)) {
-        result.push(word);
-        result.push(' ');
-        continue;
-      }
-      let text: string = word + ' ';
-      result[result.length == 0 ? 0 : result.length - 1] += text;
+    let matches = text.match(/\[[\d\w;:\/\.-\s]*\]/g);
+    let splits = text.split(/\[[\d\w;:\/\.-\s]*\]/);
+    if (!matches) return [text];
+    for (let i = 0; i < splits.length; i += 2) {
+      splits.splice(i + 1, 0, (matches && matches[i / 2]) ? matches[i / 2] : '')
     }
-    return result;
+
+    return splits;
+
+    // while ((match = split[text.].match(/\[.*\]/)?.find(x => true, match))) {
+    //   split = text.split(/\[.*\]/);
+    //   split.splice(split?.length - 1, 0, match);
+    // }
+
+    // return split;
+
+    // const result = [''];
+    // for (let word of split) {
+    //   if (this.isHyperLink(word)) {
+    //     result.push(word);
+    //     result.push(' ');
+    //     continue;
+    //   }
+    //   let text: string = word + ' ';
+    //   result[result.length == 0 ? 0 : result.length - 1] += text;
+    // }
+    // return result;
   }
 
   public isHyperLink(text: string) {
-    return /\[.*\]/.test(text);
+    return /\[[\d\w;:\/\.-\s]*\]/.test(text);
   }
 
   toArr(param: any) { return param as [] }
@@ -131,6 +146,17 @@ export class AppComponent {
   public findIndex(list: [] | any, key: string) {
     return (list as []).findIndex(x => !x[key]);
   }
+
+  openInNewTab(url: string) {
+    window.open(url, '_blank')?.focus();
+  }
+
+  onScroll(element: HTMLElement) {
+    const componentPosition = element.offsetTop;
+    const scrollPosition = window.pageYOffset + window.innerHeight;
+    return scrollPosition >= componentPosition + 150
+  }
+
 
   // @HostListener('window:scroll', ['$event'])
   // onScroll() {
