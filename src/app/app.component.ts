@@ -157,6 +157,10 @@ export class AppComponent {
     return scrollPosition >= componentPosition + 150
   }
 
+  filterUnfeaturedItems(list: ProjectModel[]) {
+    return list.filter(x => !x.featured);
+  }
+
 
   // @HostListener('window:scroll', ['$event'])
   // onScroll() {

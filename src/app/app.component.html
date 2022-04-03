@@ -1,6 +1,6 @@
 <app-splash-screen *ngIf="splashVisible" (close)="splashVisible = false"></app-splash-screen>
-<div id="app">
 
+<div id="app">
   <!-- left side social links -->
   <div [@content] class="social-contact">
     <ul class="bottom-line">
@@ -110,7 +110,7 @@
 
     <!-- Work Experience -->
     <div id="experience" scrollAnimation class="tab p-width mx-auto margin-b-large">
-      <h2 class="p-color numbered-heading">Where I've worked</h2>
+      <h2 class="p-color numbered-heading">Experience and Education</h2>
       <ng-container *ngIf="experiences | async as experiences">
         <app-tablist>
           <app-tab *ngFor="let exp of experiences" [name]="exp.type">
@@ -157,7 +157,7 @@
 
     <!-- Porject section -->
     <div id="work" class="work s-width mx-auto margin-b-large">
-      <h2 scrollAnimation class="p-color numbered-heading">Some Other Project</h2>
+      <h2 scrollAnimation class="p-color numbered-heading">Projects</h2>
       <ul class="margin-b-medium">
         <ng-container *ngFor="let project of (projects | async)">
           <li *ngIf="project.featured" scrollAnimation>
@@ -177,7 +177,8 @@
                 <li *ngFor="let item of project?.techstack" class="text d-inline-block me-2">{{item}}</li>
               </ul>
               <div class="project-links mt-1 mb-1">
-                <a class="github me-1 ms-1 cursor-pointer" href="http://www.github.com" target="_blank">
+                <a *ngIf="project?.githuburl" class="github me-1 ms-1 cursor-pointer" [href]="project?.githuburl"
+                  target="_blank">
                   <svg class="t-color" width="20px" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="p-color feather feather-github">
@@ -250,7 +251,20 @@
                         </svg>
                       </div>
                       <div class="icons">
-                        <a class="github me-1 ms-1 cursor-pointer" href="http://www.github.com" target="_blank">
+                        <a *ngIf="item?.liveurl" class="github me-2 cursor-pointer" [href]="item?.liveurl"
+                          target="_blank">
+                          <svg style="width: 28px" width="20px" xmlns="http://www.w3.org/2000/svg" role="img"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link p-color">
+                            <title>External Link</title>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                          </svg>
+                        </a>
+                        <a *ngIf="item?.githuburl" class="github me-2 ms-2 cursor-pointer" [href]="item?.githuburl"
+                          target="_blank">
                           <svg style="width: 28px" width="20px" xmlns="http://www.w3.org/2000/svg" role="img"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="p-color feather feather-github">
@@ -286,8 +300,14 @@
           </div>
         </div>
 
-        <button *ngIf="p < 10000" (click)="p = 10000;" class="p-button mt-5 mb-5 mx-auto d-block">Show More</button>
-        <button *ngIf="p === 10000" (click)="p = initP;" class="p-button mt-5 mb-5 mx-auto d-block">Show Less</button>
+        <ng-container *ngIf="(projects | async) as list">
+          <ng-container *ngIf="filterUnfeaturedItems(list).length > initP">
+            <button *ngIf="p < 10000" (click)="p = 10000;" class="p-button mt-5 mb-5 mx-auto d-block">Show More</button>
+            <button *ngIf="p === 10000" (click)="p = initP;" class="p-button mt-5 mb-5 mx-auto d-block">Show
+              Less</button>
+          </ng-container>
+        </ng-container>
+
 
       </div>
 

@@ -1,44 +1,45 @@
 .splash {
   --background: #020c1b;
-    padding: 10px; background-color: var(--background); 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  padding: 10px;
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-    z-index: 9999999999999999999999999999999999;
+  z-index: 9999999999999999999999999999999999;
 
-    font-family: inherit;
-    font-weight: 800;
+  font-family: inherit;
+  font-weight: 800;
 
 
-    --stroke-animation-delay: 0.5s;
-    --stroke-animation: 1s;
-    
-    --text-animation: 200ms;
-    
-    --scale-animation: 500ms;
-    
-    --svg-width: 200;
-    --svg-height: 100;
+  --stroke-animation-delay: 0.5s;
+  --stroke-animation: 1s;
 
-    --translate-pos: translateX(-50%) translateY(-50%); 
-    /* 600px, 300px */
+  --text-animation: 200ms;
+
+  --scale-animation: 500ms;
+
+  --svg-width: 200;
+  --svg-height: 100;
+
+  --translate-pos: translateX(-50%) translateY(-50%);
+  /* 600px, 300px */
 }
 
 svg {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: var(--translate-pos);
-    width: var(--svg-width);
-    height: var(--svg-height);
-    display: block;
-    /* margin: auto auto; */
-    margin-bottom: 40px;
-    animation: scale-out 500ms ease-in-out forwards;
-    animation-delay: calc( var(--stroke-animation) + var(--stroke-animation-delay) + var(--text-animation) + 1s);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: var(--translate-pos);
+  width: var(--svg-width);
+  height: var(--svg-height);
+  display: block;
+  /* margin: auto auto; */
+  margin-bottom: 40px;
+  animation: scale-out 500ms ease-in-out forwards;
+  animation-delay: calc(var(--stroke-animation) + var(--stroke-animation-delay) + var(--text-animation) + 1s);
 }
 
 svg g path {
@@ -56,7 +57,7 @@ svg text {
   font-size: 2em;
   opacity: 0;
   animation: fade var(--text-animation) ease-in-out forwards;
-  animation-delay: calc( var(--stroke-animation) + var(--stroke-animation-delay) );
+  animation-delay: calc(var(--stroke-animation) + var(--stroke-animation-delay));
 }
 
 @keyframes dash {
@@ -64,9 +65,11 @@ svg text {
     stroke-dashoffset: 300;
     fill-opacity: 0;
   }
+
   75% {
     fill-opacity: 0;
   }
+
   100% {
     stroke-dashoffset: 0;
     fill-opacity: 1;
@@ -77,6 +80,7 @@ svg text {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -86,9 +90,11 @@ svg text {
   0% {
     transform: var(--translate-pos) scale(1);
   }
+
   25% {
     transform: var(--translate-pos) scale(1.2);
   }
+
   100% {
     transform: var(--translate-pos) scale(0);
   }
