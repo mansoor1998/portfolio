@@ -1,7 +1,7 @@
 import { trigger, transition, query, style, stagger, animate } from '@angular/animations';
-import { ThrowStmt } from '@angular/compiler';
+// import { ThrowStmt } from '@angular/compiler';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, HostListener, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+// import { Router } from '@angular/router';
 import { listTrigger } from 'src/shared/animation';
 import { totalSplashAnimationDelay } from 'src/shared/animation-time';
 import { WindowRef } from 'src/shared/service/window.service';
@@ -49,7 +49,7 @@ export class HeaderComponent implements OnInit {
     }
   ]
 
-  constructor(private element: ElementRef<HTMLElement>, private ref: ChangeDetectorRef, public router: Router) {
+  constructor(private element: ElementRef<HTMLElement>, private ref: ChangeDetectorRef) {
   }
 
   ngOnInit(): void {

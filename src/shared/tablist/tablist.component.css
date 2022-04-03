@@ -25,7 +25,7 @@
     /* display: inline-block; */
     cursor: pointer;
     transition: all 100ms ease;
-    height: var(--line-height);
+    /* height: var(--line-height); */
 
     padding: 0.5rem;
     padding-left: 1rem;

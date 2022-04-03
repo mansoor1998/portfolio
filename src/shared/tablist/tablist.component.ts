@@ -57,8 +57,8 @@ export class TablistComponent implements OnInit {
   public top: number | undefined = 0;
   public left: number | undefined = 0;
   // public bottom: number | undefined = undefined;
-
-  public lineHeight: number | undefined = 40; // default height of the line.
+  public initHeight = 40;
+  public lineHeight: number | undefined = this.initHeight; // default height of the line.
   public lineWidth: number | undefined = 1;// default width of the line.
 
   public largeSize = true; // by default we would consider the size of the screen to be large.
@@ -92,6 +92,12 @@ export class TablistComponent implements OnInit {
     this._headers!.first.show = true;
   }
 
+  ngAfterViewInit() {
+    let arr = this.list?.toArray();
+    if (arr) this.initHeight = this.lineHeight = arr[0].nativeElement.scrollHeight;
+
+    console.log(this.initHeight);
+  }
 
   onClick(id: number) {
     this._headers?.forEach((item, i) => {
@@ -128,10 +134,10 @@ export class TablistComponent implements OnInit {
         break;
       case 'Desktop':
         // const [pos] = this.getListPos(view);
-        this.top = 40 * index!;
+        this.top = this.initHeight * index!;
         this.left = 0;
 
-        this.lineHeight = 40;
+        this.lineHeight = this.initHeight;
         this.lineWidth = 1;
 
         this.largeSize = true;

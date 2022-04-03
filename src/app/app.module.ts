@@ -5,12 +5,11 @@ import { AppComponent } from './app.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './layout/header/header.component';
-import { SwiperModule } from 'swiper/angular';
 import { appConfig, SharedModule } from '../shared/shared.module';
 import { ShowOnScrollDirective } from '../shared/directive/show-on-scroll.directive';
 import { CommonModule, PlatformLocation } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
+// import { AppRoutingModule } from './app-routing.module';
 
 function appInitializerFactory(injector: Injector, platformLocation: PlatformLocation) {
   return () => {
@@ -43,7 +42,7 @@ function appInitializerFactory(injector: Injector, platformLocation: PlatformLoc
     BrowserAnimationsModule,
     SharedModule,
     HttpClientModule,
-    AppRoutingModule
+    // AppRoutingModule
   ],
   providers: [
     {

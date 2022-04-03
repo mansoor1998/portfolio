@@ -1,6 +1,8 @@
 #app {
     background-color: var(--background);
     overflow: hidden;
+    counter-reset: section;
+
 }
 
 .title-size {
@@ -42,7 +44,7 @@
 
 .numbered-para::before, .numbered-heading::before {
     position: relative;
-    counter-increment: section 1;
+    counter-increment: section;
     content: "0" counter(section) ".";
     margin-right: 10px;
     color: var(--props-color);

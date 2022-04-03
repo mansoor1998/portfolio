@@ -34,6 +34,7 @@ export class ExperienceModel {
     public type: string = '';
     public profession: string = '';
     public company: string = '';
+    public companyUrl: string = '';
     public intro: string | string[] = ''; // if a string is wrapped between [] (sq brackets), it would be considered as a link
     public from: string = '';
     public to: string = '';
@@ -56,11 +57,11 @@ export class AppService {
 
     // other project related object is returned.
     public getProjects(): Observable<SanityModel<ProjectModel>> {
-        return this.http.get(`${this.url}/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'project'%20%26%26%20!(_id%20in%20path(%22drafts.**%22))%5D%0A%7B%0A%20%20_id%2C%0A%20%20description%2C%0A%20%20title%2C%0A%20%20featured%2C%0A%20%20techstack%2C%0A%20%20%22image%22%3A%20image.asset-%3Eurl%0A%7D%20%7C%20order(featured%20desc)`) as Observable<SanityModel<ProjectModel>>;
+        return this.http.get(`${this.url}/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'project'%20%26%26%20!(_id%20in%20path(%22drafts.**%22))%20%26%26%20display%20!%3D%20false%5D%0A%7B%0A%20%20_id%2C%0A%20%20_updatedAt%2C%0A%20%20created%2C%0A%20%20description%2C%0A%20%20featured%2C%0A%20%20githuburl%2C%0A%20%20liveurl%2C%0A%20%20techstack%2C%0A%20%20title%2C%0A%20%20%22image%22%3A%20image.asset-%3Eurl%2C%0A%20%20display%0A%7D%20%7C%20order(featured%20desc)`) as Observable<SanityModel<ProjectModel>>;
     }
 
     public getExperience(): Observable<SanityModel<ExperiencesModel>> {
-        return this.http.get(`${this.url}/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'experiences'%20%26%26%20!(_id%20in%20path(%22drafts.**%22))%5D%0A%7B%20_id%2C%20list%2C%20type%20%7D`) as Observable<SanityModel<ExperiencesModel>>;
+        return this.http.get(`${this.url}/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'experiences'%20%26%26%20!(_id%20in%20path(%22drafts.**%22))%5D%0A%7C%20order(_createdAt)`) as Observable<SanityModel<ExperiencesModel>>;
     }
 
     public getIntroduction(): Observable<SanityModel<IntroductionModel>> {

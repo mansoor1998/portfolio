@@ -4,10 +4,7 @@ import { ngExpressEngine } from '@nguniversal/express-engine';
 import * as express from 'express';
 import { join } from 'path';
 
-// global['window'] = window;
-// global['document'] = window.document;
-
-import { AppServerModule } from './src/main.server';
+import { AppServerModule } from './src/dist/portfolio/browser';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 
@@ -60,4 +57,4 @@ if (moduleFilename === __filename || moduleFilename.includes('iisnode')) {
   run();
 }
 
-export * from './src/main.server';
+export * from './src/dist/portfolio/browser';

@@ -43,7 +43,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumError": "5kb"
                 }
               ],
               "fileReplacements": [
@@ -69,7 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "portfolio:build:production"
+              "browserTarget": "portfolio:build:production",
+              "ssl": true,
+              "sslKey": "src/assets/sslcertificate/server.key",
+              "sslCert": "src/assets/sslcertificate/server.crt"
             },
             "development": {
               "browserTarget": "portfolio:build:development"
