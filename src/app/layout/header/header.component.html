@@ -2,7 +2,7 @@
     <div class="d-flex align-items-center justify-content-between container">
         <div class="logo">
             <!-- <h3>M</h3> -->
-            <a href="/" class="cursor-pointer">
+            <a [href]="appUrl" class="cursor-pointer">
                 <img class="cursor-pointer" width="50" height="50" [src]="this.appUrl + '/assets/images/logo.PNG'"
                     alt="">
             </a>
@@ -16,7 +16,11 @@
                     </a>
                 </li>
                 <li class="item">
-                    <button class="p-button">Resume</button>
+                    <a target="_blank" [href]="appUrl + '/assets/resume/resume.pdf'">
+                        <button class="p-button">
+                            Resume
+                        </button>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -42,7 +46,9 @@
                 </a>
             </li>
             <li class="item">
-                <button class="p-button">Resume</button>
+                <a target="_blank" [href]="appUrl + '/assets/resume/resume.pdf'">
+                    <button class="p-button">Resume</button>
+                </a>
             </li>
         </ul>
     </section>
