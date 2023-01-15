@@ -5,6 +5,8 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Host
 import { listTrigger } from 'src/shared/animation';
 import { totalSplashAnimationDelay } from 'src/shared/animation-time';
 import { WindowRef } from 'src/shared/service/window.service';
+import { appConfig } from 'src/shared/shared.module';
+
 
 // const animationDelay = `${3200 + 400}ms`;
 
@@ -18,6 +20,7 @@ import { WindowRef } from 'src/shared/service/window.service';
   ]
 })
 export class HeaderComponent implements OnInit {
+  public appUrl: string = appConfig.appUrl;
 
   private navbarHeight: number = 0;
   private prevScrollpos = window.pageYOffset;

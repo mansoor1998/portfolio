@@ -7,7 +7,8 @@ import { ParaComponent } from './components/para/para.component';
 export const appConfig = {
   email: '',
   number: '',
-  remoteUrl: ''
+  remoteUrl: '',
+  appUrl: ''
 };
 
 

@@ -16,10 +16,11 @@ function appInitializerFactory(injector: Injector, platformLocation: PlatformLoc
     return new Promise<boolean>((res, rej) => {
       injector.get(HttpClient).get('./assets/appconfig.json').toPromise().then((result) => {
         //@ts-ignore
-        const { email, number, remoteUrl } = result;
+        const { email, number, remoteUrl, appUrl } = result;
         appConfig.email = email;
         appConfig.number = number;
         appConfig.remoteUrl = remoteUrl;
+        appConfig.appUrl = appUrl;
         res(true);
       }).catch(err => {
         rej(false);

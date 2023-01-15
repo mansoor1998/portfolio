@@ -7,6 +7,7 @@ import { navlistAnimation, totalSplashAnimationDelay } from 'src/shared/animatio
 
 import { map, filter, tap, delay } from 'rxjs/operators'
 import { ProjectModel, AppService, IntroductionModel, SanityModel, ExperienceModel, ExperiencesModel } from 'src/shared/service/app.service';
+import { appConfig } from 'src/shared/shared.module';
 
 
 
@@ -41,6 +42,8 @@ import { ProjectModel, AppService, IntroductionModel, SanityModel, ExperienceMod
   ]
 })
 export class AppComponent {
+  public appUrl: string = appConfig.appUrl;
+
   public initP = 6;
   public p = this.initP;
 
