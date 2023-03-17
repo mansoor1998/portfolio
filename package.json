@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:prod": "ng build --prod --base-href https://mansoor1998.github.io/portfolio/ && ngh --dir dist/portfolio/browser",
+    "build:prod": "ng build --prod --base-href https://mansoor1998.github.io/portfolio/",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
