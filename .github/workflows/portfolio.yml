@@ -32,7 +32,7 @@ jobs:
         run: npm run build:prod
 
       - name: Deploy to GitHub Pages
-        uses: mansoor1998/portfolio@v3
+        uses: mansoor1998/portfolio
         with:
           target_branch: gh-pages
           build_dir: dist/portfolio/browser
