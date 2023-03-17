@@ -1,0 +1,29 @@
+name: Angular Build and Deploy
+
+on:
+  push:
+    branches:
+      - main # change this to the branch where you want to trigger the action
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14.x' # or whichever version you need for your app
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build
+      run: ng build --prod --base-href https://mansoor1998.github.io/portfolio/
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist/portfolio/browser
