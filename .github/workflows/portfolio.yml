@@ -1,29 +1,40 @@
-name: Angular Build and Deploy
-
+name: CI / CD for Angular
 on:
   push:
-    branches:
-      - main # change this to the branch where you want to trigger the action
+    branches: [ "main" ]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14.x' # or whichever version you need for your app
+      - name: Set up node.js
+        uses: actions/setup-node@v3.3.0
+        with:
+          node-version: '16'
+          cache: 'npm'
 
-    - name: Install Dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Build
-      run: ng build --prod --base-href https://mansoor1998.github.io/portfolio/
+      - name: Replace secret
+        uses: cschleiden/replace-tokens@v1
+        with:
+          tokenPrefix: '{'
+          tokenSuffix: '}'
+          files: 'src/environment.prod.ts'
+        env:
+          SECRET_API_KEY: ${{ secrets.API_KEY}}
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/portfolio/browser
+      - name: Build
+        run: npm run build:prod
+
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: gh-pages
+          build_dir: dist/weather-app
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
