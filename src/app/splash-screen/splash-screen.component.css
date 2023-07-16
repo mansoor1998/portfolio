@@ -38,8 +38,9 @@ svg {
   display: block;
   /* margin: auto auto; */
   margin-bottom: 40px;
-  animation: scale-out 500ms ease-in-out forwards;
-  animation-delay: calc(var(--stroke-animation) + var(--stroke-animation-delay) + var(--text-animation) + 1s);
+  /*animation: scale-out 500ms ease-in-out forwards;*/
+  /*animation-delay: calc(var(--stroke-animation) + var(--stroke-animation-delay) + var(--text-animation) + 1s);*/
+/*  500ms + 1000ms + 200ms + 1000ms*/
 }
 
 svg g path {
@@ -48,54 +49,54 @@ svg g path {
   stroke-width: 5;
   fill-opacity: 0;
   fill: transparent;
-  animation: dash var(--stroke-animation) ease-in-out forwards;
-  animation-delay: var(--stroke-animation-delay);
+  /*animation: dash var(--stroke-animation) ease-in-out forwards;*/
+  /*animation-delay: var(--stroke-animation-delay);*/
   transform-origin: center center;
 }
 
 svg text {
   font-size: 2em;
   opacity: 0;
-  animation: fade var(--text-animation) ease-in-out forwards;
-  animation-delay: calc(var(--stroke-animation) + var(--stroke-animation-delay));
+  /*animation: fade var(--text-animation) ease-in-out forwards;*/
+  /*animation-delay: calc(var(--stroke-animation) + var(--stroke-animation-delay));*/
 }
 
-@keyframes dash {
-  0% {
-    stroke-dashoffset: 300;
-    fill-opacity: 0;
-  }
+/*@keyframes dash {*/
+/*  0% {*/
+/*    stroke-dashoffset: 300;*/
+/*    fill-opacity: 0;*/
+/*  }*/
 
-  75% {
-    fill-opacity: 0;
-  }
+/*  75% {*/
+/*    fill-opacity: 0;*/
+/*  }*/
 
-  100% {
-    stroke-dashoffset: 0;
-    fill-opacity: 1;
-  }
-}
+/*  100% {*/
+/*    stroke-dashoffset: 0;*/
+/*    fill-opacity: 1;*/
+/*  }*/
+/*}*/
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
+/*@keyframes fade {*/
+/*  0% {*/
+/*    opacity: 0;*/
+/*  }*/
 
-  100% {
-    opacity: 1;
-  }
-}
+/*  100% {*/
+/*    opacity: 1;*/
+/*  }*/
+/*}*/
 
-@keyframes scale-out {
-  0% {
-    transform: var(--translate-pos) scale(1);
-  }
+/*@keyframes scale-out {*/
+/*  0% {*/
+/*    transform: var(--translate-pos) scale(1);*/
+/*  }*/
 
-  25% {
-    transform: var(--translate-pos) scale(1.2);
-  }
+/*  25% {*/
+/*    transform: var(--translate-pos) scale(1.2);*/
+/*  }*/
 
-  100% {
-    transform: var(--translate-pos) scale(0);
-  }
-}
+/*  100% {*/
+/*    transform: var(--translate-pos) scale(0);*/
+/*  }*/
+/*}*/

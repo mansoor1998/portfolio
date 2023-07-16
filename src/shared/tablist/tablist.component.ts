@@ -61,7 +61,7 @@ export class TablistComponent implements OnInit {
   public lineHeight: number | undefined = this.initHeight; // default height of the line.
   public lineWidth: number | undefined = 1;// default width of the line.
 
-  public largeSize = true; // by default we would consider the size of the screen to be large.
+  public largeSize = true; // by default, we would consider the size of the screen to be large.
 
   @ContentChildren(TabComponent)
   _headers: QueryList<TabComponent> | undefined;
@@ -93,8 +93,6 @@ export class TablistComponent implements OnInit {
   ngAfterViewInit() {
     let arr = this.list?.toArray();
     if (arr) this.initHeight = this.lineHeight = arr[0].nativeElement.scrollHeight;
-
-    console.log(this.initHeight);
   }
 
   onClick(id: number) {

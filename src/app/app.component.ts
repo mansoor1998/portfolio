@@ -61,10 +61,9 @@ export class AppComponent {
   public animationDone = false;
 
   public show = false;
-  @ViewChild('otherProjects') otherproject: ElementRef<HTMLElement> | undefined;
+  @ViewChild('otherProjects') otherProjects: ElementRef<HTMLElement> | undefined;
   constructor(private builder: AnimationBuilder, private http: HttpClient, private ref: ChangeDetectorRef, private appService: AbstractAppService) { }
   ngOnInit() {
-    console.log("AppComponent Init");
     document.body.style.overflowY = 'hidden';
     setTimeout(() => { document.body.style.overflowY = 'scroll' }, totalSplashAnimationDelay);
 
@@ -129,12 +128,6 @@ export class AppComponent {
 
   openInNewTab(url: string) {
     window.open(url, '_blank')?.focus();
-  }
-
-  onScroll(element: HTMLElement) {
-    const componentPosition = element.offsetTop;
-    const scrollPosition = window.pageYOffset + window.innerHeight;
-    return scrollPosition >= componentPosition + 150
   }
 
   filterUnfeaturedItems(list: ProjectModel[]) {
