@@ -71,6 +71,7 @@ export class AppComponent {
   @ViewChild('otherProjects') otherproject: ElementRef<HTMLElement> | undefined;
   constructor(private builder: AnimationBuilder, private http: HttpClient, private ref: ChangeDetectorRef, private appService: AbstractAppService) { }
   ngOnInit() {
+    console.log("AppComponent Init");
     document.body.style.overflowY = 'hidden';
     setTimeout(() => { document.body.style.overflowY = 'scroll' }, totalSplashAnimationDelay);
 
