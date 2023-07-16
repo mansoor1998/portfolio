@@ -26,7 +26,7 @@ jobs:
           tokenSuffix: '}'
           files: 'src/environment.prod.ts'
         env:
-          SECRET_API_KEY: ${{ secrets.API_KEY}}
+          SECRET_API_KEY: ${{secrets.API_KEY}}
 
       - name: Build
         run: npm run build:prod
