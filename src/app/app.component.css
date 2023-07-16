@@ -10,8 +10,6 @@
 }
 
 .introduction {
-    /* margin-top: 15em;
-    margin-bottom: 15em; */
     min-height: calc(100vh);
     overflow: hidden;
 }
@@ -21,7 +19,6 @@
     margin-top: 15em;
 }
 .margin-b-large {
-    /* margin-top: 15em; */
     margin-bottom: 15em;
 }
 
@@ -38,7 +35,6 @@
     position: relative;
     margin: 10px 0px 40px;
     width: 100%;
-    /* font-size: clamp(26px,5vw,var(--fz-heading)); */
     white-space: nowrap;
 }
 
@@ -48,8 +44,6 @@
     content: "0" counter(section) ".";
     margin-right: 10px;
     color: var(--props-color);
-    /* font-size: clamp(var(--fz-md),3vw,var(--fz-xl)); */
-    /* font-weight: 400; */
 }
 
 .numbered-heading::after {
@@ -74,7 +68,6 @@
 
 
 /* other working projects. */
-
 .work > ul {
     display: flex;
     flex-direction: column;
@@ -218,7 +211,6 @@ footer p {
 .email-contact {
     position: fixed;
     bottom: 0;
-    /* right: calc((100vw - 1500px - 130px)/2); */
     right: clamp(40px - 130px, calc((100vw - 1650px - 130px)/2), 100vw);
 }
 
@@ -282,12 +274,6 @@ footer p {
     .other-project > div {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
-
-    /* .email-contact, .social-contact {
-        display: none;
-    } */
-
-
 }
 
 @media only screen and (max-width: 1080px) {
@@ -305,6 +291,3 @@ footer p {
 
 
 /* color of the work #0d2034 */
-
-
-/**/

@@ -8,7 +8,7 @@ export function listTrigger(position: string, animationTimeDelay: number, animat
         ])
     ])
 }
-// animation query realted to trigger.
+// animation query related to trigger.
 export function listTriggerQuery(position: string, animationTimeDelay: number) {
     return query('.item', [
         style({ opacity: 0, transform: `translateY(${position})` }),

@@ -35,11 +35,11 @@ export class TabComponent {
   template: `
     <div class="parent">
       <div class="tab-list">
-        <div [ngStyle]="{ top: top + 'px', left: left + 'px', bottom: 0, 
+        <div [ngStyle]="{ top: top + 'px', left: left + 'px', bottom: 0,
                           height: lineHeight + 'px', width: lineWidth + 'px'  }" class="line"></div>
         <ul>
           <li #list *ngFor="let b of buttons" [ngClass]="{ 'selected':  (b.show) }" (click)="onClick(b.id)">
-            {{b.name}}      
+            {{b.name}}
           </li>
         </ul>
       </div>
@@ -67,8 +67,6 @@ export class TablistComponent implements OnInit {
   _headers: QueryList<TabComponent> | undefined;
 
   @ViewChildren('list') list: QueryList<ElementRef<HTMLElement>> | undefined;
-
-  public lineHeigt: number = 0;
   public buttons: TabComponent[] = [];
 
   constructor(private cd: ChangeDetectorRef) { }
@@ -80,11 +78,11 @@ export class TablistComponent implements OnInit {
   onResize(event?: any) {
     if (event?.target?.innerWidth <= 600 || window.innerWidth <= 600) {
       if (!this.largeSize) return;
-      this.setlinePos('Mobile');
+      this.setLinePos('Mobile');
       return;
     }
     if (this.largeSize) return;
-    this.setlinePos('Desktop');
+    this.setLinePos('Desktop');
   }
 
   ngAfterContentInit() {
@@ -113,7 +111,7 @@ export class TablistComponent implements OnInit {
     })
   }
 
-  setlinePos(view: 'Mobile' | 'Desktop') {
+  setLinePos(view: 'Mobile' | 'Desktop') {
     const [sum, index] = this.getListPos()
 
     switch (view) {
@@ -153,26 +151,8 @@ export class TablistComponent implements OnInit {
     let count = this._headers?.toArray().filter((e, i) => i < index!).length! - 1;
     let sum = 0;
     for (let i = 0; i <= count; i++) {
-      // switch (view) {
-      //   case 'Desktop':
-      //     sum += this.list?.get(i)?.nativeElement.scrollHeight!;
-      //     break;
-      //   case 'Mobile':
-      //   default:
-      //     sum += this.list?.get(i)?.nativeElement.scrollWidth!;
-      // }
-
       sum += this.list?.get(i)?.nativeElement.scrollWidth!;
     }
     return [sum, index];
   }
 }
-
-
-// @NgModule({
-//   declarations: [
-//     TablistComponent,
-//     TabComponent
-//   ]
-// })
-// export class TablistModule { }

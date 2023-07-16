@@ -16,7 +16,7 @@
           </svg></a>
       </li>
       <li class="mt-4 mb-4">
-        <a href="https://www.linkedin.com/in/mansoor-soomro-9970a8127/" aria-label="Linkedin" target="_blank"
+        <a href="https://www.linkedin.com/" aria-label="Linkedin" target="_blank"
           rel="noreferrer" class="linkedin me-1 ms-1 cursor-pointer ng-tns-c16-0"><svg style="color: inherit;"
             width="30px" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -27,6 +27,12 @@
             <circle cx="4" cy="4" r="2"></circle>
           </svg></a>
       </li>
+      <li class="mt-4 mb-4">
+        <a href="https://www.instagram.com" aria-label="Instagram" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+      </li>
+      <li class="mt-4 mb-4">
+        <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><title>Twitter</title><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+      </li>
     </ul>
   </div>
 
@@ -34,7 +40,7 @@
   <div [@content] class="email-contact bottom-line">
     <a class="no-a-style" href="mailto:mansoorsoomro1997@gmail.com">
       <span class="font-color">
-        mansoorsoomro1997@gmail.com
+        maxmusterman@email.com
       </span>
     </a>
   </div>
@@ -48,18 +54,10 @@
       [@list]>
       <div>
         <p class="item" style="color: var(--props-color)">Hi, my name is</p>
-        <h2 class="fw-bold title-size item p-color">Mansoor Soomro.</h2>
+        <h2 class="fw-bold title-size item p-color">Max Musterman.</h2>
         <h3 class="fw-bold title-size item s-color">I build things for the web.</h3>
         <p class="item" style="width: clamp(min(65ch, 100%), 50%, 75ch)">
-          I am a Software Engineer with 2+ years of worth of experience in building and designing state of the art
-          digital
-          expereinces.
-          Currently I am persuing my masters in Computer Science in
-          <a class="anchor-p d-inline-block" target="_blank" href="https://www.uni-paderborn.de/en/">
-            Universität Paderborn
-          </a>
-          and working as a software engineer in
-          <a class="anchor-p d-inline-block" target="_blank" href="https://www.comnovo.de/en/">Comnovo</a>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laborum at, sed nesciunt animi accusamus et temporibus voluptate dolor quia vitae sapiente recusandae nisi nihil, minima quod distinctio esse. Minus.
         </p>
       </div>
     </div>
@@ -85,28 +83,12 @@
                 <li class="w-50 mt-1 mb-1" *ngFor="let item of toArr(intro?.tech)">
                   {{item}}
                 </li>
-                <!-- <li class="w-50 mt-1 mb-1"></li>
-                <li class="w-50 mt-1 mb-1">React</li>
-                <li class="w-50 mt-1 mb-1">Angular</li>
-                <li class="w-50 mt-1 mb-1">Node JS</li>
-                <li class="w-50 mt-1 mb-1">.Net Core</li>
-                <li class="w-50 mt-1 mb-1">Docker</li> -->
               </ul>
             </div>
           </ng-container>
-
-          <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis placeat dicta veritatis, optio hic
-            illo sed. Accusamus architecto non, sequi dolorem sapiente provident eaque nemo corporis cupiditate quae
-            ducimus odio.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis corrupti quod ullam cum sunt
-            mollitia beatae odio. Eius esse eveniet, eaque aut debitis voluptas? Culpa dolore cum iste fugit.</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias illum deleniti eligendi, quos assumenda
-            quis quibusdam facilis distinctio maxime, atque at tempora suscipit laudantium, officiis cum provident
-            exercitationem id similique.</p> -->
-
         </div>
         <div class="image">
-          <img alt="mansoor" class="rounded mx-auto d-block" [src]="appUrl + '/assets/images/person.jfif'" alt="">
+          <img alt="mansoor" class="rounded mx-auto d-block" src="assets/images/person.jpg" alt="">
         </div>
       </div>
     </div>
@@ -133,8 +115,6 @@
                   </ng-container>
                 </li>
               </ul>
-              <!-- <p *ngFor="let para of toArr(p?.responsibilites)">
-              </p> -->
             </div>
           </app-tab>
         </app-tablist>
@@ -148,7 +128,6 @@
         <ng-container *ngFor="let project of (projects | async)">
           <li *ngIf="project.featured" scrollAnimation>
             <div (click)="openInNewTab(project.image)" class="h-100">
-              <!-- <span class="p-color">{{project.image. | json}}</span> -->
               <img [alt]="project.image" class="w-100 h-100" [src]="project.image">
             </div>
             <div>
@@ -157,7 +136,12 @@
                 <h4 class="s-color m-0">{{ project.title }}</h4>
               </div>
               <div class="p-3 mt-1 mb-2 rounded text">
-                {{ project?.description }}
+                <ng-container *ngFor="let d of toArr(project?.description)">
+                  <ng-container *ngIf="isHyperLink(d); else description">
+                    <a target="_blank" class="anchor-p" [href]="split(d)[1]">{{split(d)[0]}} </a>
+                  </ng-container>
+                  <ng-template #description>{{d}}</ng-template>
+                </ng-container>
               </div>
               <ul class="ms-2 mt-1 mb-1 overflow-visible">
                 <li *ngFor="let item of project?.techstack" class="text d-inline-block me-2">{{item}}</li>
@@ -165,9 +149,9 @@
               <div class="project-links mt-1 mb-1">
                 <a *ngIf="project?.githuburl" class="github me-1 ms-1 cursor-pointer" [href]="project?.githuburl"
                   target="_blank">
-                  <svg class="t-color" width="20px" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="p-color feather feather-github">
+                  <svg width="20px" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                       fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                       class="p-color feather feather-github">
                     <title>GitHub</title>
                     <path
                       d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
@@ -178,39 +162,6 @@
             </div>
           </li>
         </ng-container>
-
-        <!-- <li scrollAnimation>
-          <div class="h-100">
-            <img class="w-100 h-100"
-              src="https://www.lightstalking.com/wp-content/uploads/backlit-beach-color-258109-3-1024x576.jpg" alt="">
-          </div>
-          <div>
-            <div class="title mb-3">
-              <p class="t-color mb-1">Featured Project</p>
-              <h5 class="s-color m-0">Theme</h5>
-            </div>
-            <div class="p-3 mt-1 mb-2 rounded text">
-              this is the content that i have here. the techs that were used you can alreay see if you cant than you
-              are dumb please get an eye check.
-            </div>
-            <ul class="ms-2 mt-1 mb-1 overflow-visible">
-              <li class="text d-inline me-2">VS Code</li>
-              <li class="text d-inline me-2 ms-2">Dot NEt</li>
-            </ul>
-            <div class="project-links mt-1 mb-1">
-              <a class="github me-1 ms-1 cursor-pointer" href="http://www.github.com" _target="blank">
-                <svg width="20px" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="p-color feather feather-github">
-                  <title>GitHub</title>
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                  </path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </li> -->
       </ul>
 
       <!-- this div is a place holder to get the position of the element. -->
@@ -219,8 +170,7 @@
         <div class="other-project">
           <h2 class="text-center p-color mb-3">Other Projects</h2>
           <!-- #otherProjects -->
-          <div #element></div>
-          <div *ngIf="projects | async as list" class="mx-auto">
+          <div #element *ngIf="projects | async as list" class="mx-auto">
             <ng-container *appearOnScroll="element">
               <ng-container
                 *ngFor="let item of list | slice:findIndex(list, 'featured'):findIndex(list, 'featured') + p; let i = index">
@@ -276,9 +226,6 @@
                   </div>
                   <ul>
                     <li *ngFor="let tech of item?.techstack" class="text d-inline me-2"><small>{{tech}}</small></li>
-                    <!-- <li class="text d-inline me-2 ms-2"><small>Dot Net</small></li>
-                    <li class="text d-inline me-2 ms-2"><small>Rest Api</small></li> -->
-                    <!-- <li *ngFor="let item of list?.techstack" class="text d-inline ms-2"> {{ item }} </li> -->
                   </ul>
                 </div>
               </ng-container>
@@ -300,15 +247,12 @@
     </div>
   </section>
 
-  <!-- Contact section (footer steps) -->
+  <!-- footer, Contact section -->
   <footer id="contact" scrollAnimation class="p-width container margin-t-large margin-b-large text-center">
     <h2 class="mb-3">Get In Touch</h2>
-    <p class="mx-auto w-md-25">I am always looking for new opportunities and
-      my inbox is always
-      open. Wheather you have a
-      question or just want to say hi, I'll try my best to get back to you!</p>
-    <a class="no-a-style" href="mailto:mansoorsoomro1997@gmail.com">
-      <button class="p-button">Say Hello </button>
+    <p class="mx-auto w-md-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sit accusamus aliquam. Recusandae nemo adipisci rem omnis modi? Distinctio aliquid reiciendis nesciunt quam nulla fugit neque sunt accusantium ipsum ipsam.</p>
+    <a class="no-a-style" href="mailto:maxmusterman@email.com">
+      <button class="p-button">Say Hello</button>
     </a>
   </footer>
 

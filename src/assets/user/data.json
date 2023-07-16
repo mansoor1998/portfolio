@@ -1,0 +1,512 @@
+{
+    "introduction": {
+        "query": "",
+        "result": [
+            {
+                "tech": [
+                    "NanoBot",
+                    "NeuroLink",
+                    "BioGraft",
+                    "SkyNet",
+                    "HyperWave",
+                    "EcoSphere",
+                    "QuantumMesh",
+                    "LunarBeam",
+                    "NeptuneAI",
+                    "StarGate"
+                ],
+                "_createdAt": "2022-03-20T18:47:15Z",
+                "_type": "introduction",
+                "about": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros.",
+                    "Suspendisse at posuere arcu, sit amet bibendum dolor. Proin posuere massa non sem [Maecenas;https://www.example.com], non consectetur nisi fermentum. Suspendisse potenti. Etiam egestas purus nec neque dignissim, in congue quam iaculis. In nec fringilla mauris. Cras auctor facilisis turpis, eu dictum quam finibus in. Sed interdum rhoncus dapibus. Maecenas eget velit a quam gravida laoreet eu eu tortor. Nunc eget blandit purus. Fusce pellentesque, justo at ultrices fermentum, tortor ipsum consectetur odio, quis venenatis ex ex quis felis."
+                ],
+                "_id": "b3cf8762-edb7-4961-8d98-dd2bbb7de4ea"
+            }
+        ],
+        "ms": 4
+    },
+    "experiences": {
+        "query": "*[_type == 'experiences' \u0026\u0026 !(_id in path(\"drafts.**\"))]\n| order(_createdAt)",
+        "result": [
+            {
+                "type": "Experience",
+                "_updatedAt": "2023-03-17T11:51:33Z",
+                "_createdAt": "2022-03-20T18:32:12Z",
+                "_rev": "0lF4kyZBi1fr8QymZ92UBO",
+                "_type": "experiences",
+                "_id": "fb34159d-21bc-4d44-b2ff-beb7b3712cdc",
+                "list": [
+                    {
+                        "companyUrl": "https://www.example.com/",
+                        "to": "Present",
+                        "_key": "00e555c533f9",
+                        "profession": "Lorem Ipsum",
+                        "responsibilites": [
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros.",
+                            "Suspendisse at posuere arcu, sit amet bibendum dolor. Proin posuere massa non sem [Maecenas;https://www.example.com], non consectetur nisi fermentum. Suspendisse potenti. Etiam egestas purus nec neque dignissim, in congue quam iaculis. In nec fringilla mauris. Cras auctor facilisis turpis, eu dictum quam finibus in. Sed interdum rhoncus dapibus. Maecenas eget velit a quam gravida laoreet eu eu tortor. Nunc eget blandit purus. Fusce pellentesque, justo at ultrices fermentum, tortor ipsum consectetur odio, quis venenatis ex ex quis felis."
+                        ],
+                        "_type": "experience",
+                        "company": "Lorem",
+                        "from": "Jan 1998"
+                    },
+                    {
+                        "companyUrl": "https://www.example.com/",
+                        "to": "Present",
+                        "_key": "00e555c533f9",
+                        "profession": "Lorem Ipsum",
+                        "responsibilites": [
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros.",
+                            "Suspendisse at posuere arcu, sit amet bibendum dolor. Proin posuere massa non sem [Maecenas;https://www.example.com], non consectetur nisi fermentum. Suspendisse potenti. Etiam egestas purus nec neque dignissim, in congue quam iaculis. In nec fringilla mauris. Cras auctor facilisis turpis, eu dictum quam finibus in. Sed interdum rhoncus dapibus. Maecenas eget velit a quam gravida laoreet eu eu tortor. Nunc eget blandit purus. Fusce pellentesque, justo at ultrices fermentum, tortor ipsum consectetur odio, quis venenatis ex ex quis felis."                        ],
+                        "_type": "experience",
+                        "company": "Lorem",
+                        "from": "Jan 1998"
+                    }
+                ]
+            },
+            {
+                "type": "Education",
+                "_updatedAt": "2022-04-07T16:39:52Z",
+                "_createdAt": "2022-03-20T18:34:09Z",
+                "_rev": "6ju5zZKYY9nCLsOJYRDySq",
+                "_type": "experiences",
+                "_id": "48c81a5f-f749-4561-a5ce-94b0025950fa",
+                "list": [
+                    {
+                        "_key": "87e222d0d539",
+                        "responsibilites": [
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros."
+                        ],
+                        "_type": "experience",
+                        "from": "Apr 2022",
+                        "company": "Lorem",
+                        "to": "Present",
+                        "profession": "Lorem Ipsum",
+                        "companyUrl": "https://www.exmple.com",
+                        "intro": "Lorem ipsum dolor sit amet, consectetur"
+                    },
+                    {
+                        "_key": "87e222d0d539",
+                        "responsibilites": [
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros.",
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros.",
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros.",
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros.",
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros."
+                        ],
+                        "_type": "experience",
+                        "from": "Apr 2022",
+                        "company": "Lorem",
+                        "to": "Present",
+                        "profession": "Lorem Ipsum",
+                        "companyUrl": "https://www.exmple.com",
+                        "intro": "Lorem ipsum dolor sit amet, consectetur"
+                    }
+                ]
+            },
+            {
+                "type": "Bootcamp",
+                "_updatedAt": "2022-04-07T16:39:52Z",
+                "_createdAt": "2022-03-20T18:34:09Z",
+                "_rev": "6ju5zZKYY9nCLsOJYRDySq",
+                "_type": "experiences",
+                "_id": "48c81a5f-f749-4561-a5ce-94b0025950fa",
+                "list": [
+                    {
+                        "_key": "87e222d0d539",
+                        "responsibilites": [
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros."
+                        ],
+                        "_type": "experience",
+                        "from": "Apr 2022",
+                        "company": "Lorem",
+                        "to": "Present",
+                        "profession": "Lorem Ipsum",
+                        "companyUrl": "https://www.exmple.com",
+                        "intro": "Lorem ipsum dolor sit amet, consectetur"
+                    },
+                    {
+                        "_key": "87e222d0d539",
+                        "responsibilites": [
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros.",
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. Quisque quis sem ac erat volutpat pellentesque. Nulla facilisi. Integer et nisi tortor. Nulla facilisi. Suspendisse faucibus ipsum nec dui malesuada bibendum. Vivamus eget dui ac est vestibulum tincidunt. Duis finibus magna vel risus ullamcorper, ut efficitur odio bibendum. Nullam eget ipsum sit amet lectus pharetra vestibulum. Sed non nulla vel justo feugiat finibus vel non eros."
+                        ],
+                        "_type": "experience",
+                        "from": "Apr 2022",
+                        "company": "Lorem",
+                        "to": "Present",
+                        "profession": "Lorem Ipsum",
+                        "companyUrl": "https://www.exmple.com",
+                        "intro": "Lorem ipsum dolor sit amet, consectetur"
+                    }
+                ]
+            }
+        ],
+        "ms": 4
+    },
+    "projects": {
+        "query": "*[_type == 'project' \u0026\u0026 !(_id in path(\"drafts.**\")) \u0026\u0026 display != false]\n{\n  _id,\n  _updatedAt,\n  created,\n  description,\n  featured,\n  githuburl,\n  liveurl,\n  techstack,\n  title,\n  \"image\": image.asset-\u003eurl,\n  display\n} | order(featured desc)",
+        "result": [
+            {
+                "_id": "1700f66b-d10e-4e06-92dc-a0d839f26cb9",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "image": "https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2018/09/how-to-design-a-website-21.png",
+                "_updatedAt": "2022-04-02T14:40:54Z",
+                "created": "May-2022",
+                "featured": true,
+                "githuburl": null,
+                "liveurl": null,
+                "techstack": [
+                    "ASP.NET Core",
+                    "Angular 12+",
+                    "ASP.NET Boilerplate",
+                    "Git \u0026 Github",
+                    "SQL Server"
+                ],
+                "title": "Lorem Ipsum",
+                "display": true
+            },
+            {
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "githuburl": null,
+                "display": null,
+                "image": "https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2018/09/how-to-design-a-website-21.png",
+                "_id": "84994d9c-770c-40d2-997b-1ec5ea1bddf9",
+                "_updatedAt": "2022-04-02T14:40:24Z",
+                "created": "Jun-2020",
+                "featured": true,
+                "liveurl": null,
+                "techstack": [
+                    "ASP.Net Core",
+                    "Angular 12+",
+                    "SQL Server",
+                    "ASP.NET Boilerplate",
+                    "Git \u0026 Github"
+                ],
+                "title": "Lorem Ipsum"
+            },
+            {
+                "githuburl": "https://example.com",
+                "liveurl": null,
+                "techstack": [
+                    "Node JS / Typescript",
+                    "Angular 13",
+                    "Postgres / TypeORM",
+                    "Git \u0026 Github"
+                ],
+                "_id": "9492472e-4784-4254-b1a5-b140c6821a3a",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "featured": true,
+                "title": "Commerce PK",
+                "image": "https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2018/09/how-to-design-a-website-21.png",
+                "display": null,
+                "_updatedAt": "2022-04-02T11:30:49Z",
+                "created": "May-2022"
+            },
+            {
+                "created": "Oct-2022",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "githuburl": null,
+                "liveurl": null,
+                "techstack": [
+                    "ASP.NET Core",
+                    "Azure Functions",
+                    "Angular 12+",
+                    "Git \u0026 Github"
+                ],
+                "image": "https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2018/09/how-to-design-a-website-21.png",
+                "display": true,
+                "_id": "c661ef12-0812-4848-a06c-7655aebf1cd1",
+                "_updatedAt": "2023-01-22T21:02:22Z",
+                "featured": true,
+                "title": "Safety Guard App"
+            },
+            {
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "featured": false,
+                "liveurl": "https://mansoor1998.github.io/PMS",
+                "title": "Pharmacy Management System",
+                "display": true,
+                "_id": "0ed93dcc-f1fd-4346-bc09-83d6fcb68df4",
+                "_updatedAt": "2023-05-23T07:27:42Z",
+                "created": null,
+                "githuburl": "https://github.com/mansoor1998/PMS",
+                "techstack": [
+                    "Angular 12+",
+                    "DotNet Core",
+                    "PostgreSQL"
+                ],
+                "image": null
+            },
+            {
+                "_id": "4a287f3f-0053-4bdf-97ab-7fef2c17472f",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. ",
+                "featured": false,
+                "techstack": [
+                    "React",
+                    "PostgreSQL",
+                    "NodeJs"
+                ],
+                "title": "Movie Manager",
+                "display": true,
+                "_updatedAt": "2023-01-05T16:23:53Z",
+                "created": null,
+                "githuburl": "https://github.com/mansoor1998/MovieManager",
+                "liveurl": null,
+                "image": null
+            },
+            {
+                "display": true,
+                "_updatedAt": "2023-01-05T16:23:11Z",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "githuburl": "https://github.com/mansoor1998/JavaScript-P5",
+                "title": "P5-Project",
+                "techstack": [
+                    "Javascript",
+                    "P5 Library"
+                ],
+                "image": null,
+                "_id": "6a4d33a2-1fc2-45bd-801e-67cf57bd2ab4",
+                "created": null,
+                "featured": false,
+                "liveurl": null
+            },
+            {
+                "liveurl": null,
+                "title": "Resume Builder",
+                "image": null,
+                "_updatedAt": "2023-01-05T16:24:00Z",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "featured": false,
+                "githuburl": "https://github.com/mansoor1998/resume-builder-frontend",
+                "_id": "eed61aa2-dd61-48c0-bc36-d187778ab243",
+                "created": null,
+                "techstack": [
+                    "Typescript",
+                    "NodeJS",
+                    "PostgreSQL",
+                    "Angular"
+                ],
+                "display": true
+            },
+            {
+                "title": "Crysta",
+                "display": true,
+                "_id": "f36aa367-5c43-4e88-bb63-3e4bbcadb9e2",
+                "_updatedAt": "2023-01-05T16:23:35Z",
+                "created": null,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "githuburl": "https://github.com/mansoor1998/crysta",
+                "techstack": [
+                    "HTML",
+                    "CSS"
+                ],
+                "featured": false,
+                "liveurl": "https://mansoor1998.github.io/crysta/itFirm/index.html",
+                "image": null
+            },
+            {
+                "_id": "4a287f3f-0053-4bdf-97ab-7fef2c17472f",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. ",
+                "featured": false,
+                "techstack": [
+                    "React",
+                    "PostgreSQL",
+                    "NodeJs"
+                ],
+                "title": "Movie Manager",
+                "display": true,
+                "_updatedAt": "2023-01-05T16:23:53Z",
+                "created": null,
+                "githuburl": "https://github.com/mansoor1998/MovieManager",
+                "liveurl": null,
+                "image": null
+            },
+            {
+                "display": true,
+                "_updatedAt": "2023-01-05T16:23:11Z",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "githuburl": "https://github.com/mansoor1998/JavaScript-P5",
+                "title": "P5-Project",
+                "techstack": [
+                    "Javascript",
+                    "P5 Library"
+                ],
+                "image": null,
+                "_id": "6a4d33a2-1fc2-45bd-801e-67cf57bd2ab4",
+                "created": null,
+                "featured": false,
+                "liveurl": null
+            },
+            {
+                "liveurl": null,
+                "title": "Resume Builder",
+                "image": null,
+                "_updatedAt": "2023-01-05T16:24:00Z",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "featured": false,
+                "githuburl": "https://github.com/mansoor1998/resume-builder-frontend",
+                "_id": "eed61aa2-dd61-48c0-bc36-d187778ab243",
+                "created": null,
+                "techstack": [
+                    "Typescript",
+                    "NodeJS",
+                    "PostgreSQL",
+                    "Angular"
+                ],
+                "display": true
+            },
+            {
+                "title": "Crysta",
+                "display": true,
+                "_id": "f36aa367-5c43-4e88-bb63-3e4bbcadb9e2",
+                "_updatedAt": "2023-01-05T16:23:35Z",
+                "created": null,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "githuburl": "https://github.com/mansoor1998/crysta",
+                "techstack": [
+                    "HTML",
+                    "CSS"
+                ],
+                "featured": false,
+                "liveurl": "https://mansoor1998.github.io/crysta/itFirm/index.html",
+                "image": null
+            },
+            {
+                "_id": "4a287f3f-0053-4bdf-97ab-7fef2c17472f",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. ",
+                "featured": false,
+                "techstack": [
+                    "React",
+                    "PostgreSQL",
+                    "NodeJs"
+                ],
+                "title": "Movie Manager",
+                "display": true,
+                "_updatedAt": "2023-01-05T16:23:53Z",
+                "created": null,
+                "githuburl": "https://github.com/mansoor1998/MovieManager",
+                "liveurl": null,
+                "image": null
+            },
+            {
+                "display": true,
+                "_updatedAt": "2023-01-05T16:23:11Z",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "githuburl": "https://github.com/mansoor1998/JavaScript-P5",
+                "title": "P5-Project",
+                "techstack": [
+                    "Javascript",
+                    "P5 Library"
+                ],
+                "image": null,
+                "_id": "6a4d33a2-1fc2-45bd-801e-67cf57bd2ab4",
+                "created": null,
+                "featured": false,
+                "liveurl": null
+            },
+            {
+                "liveurl": null,
+                "title": "Resume Builder",
+                "image": null,
+                "_updatedAt": "2023-01-05T16:24:00Z",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "featured": false,
+                "githuburl": "https://github.com/mansoor1998/resume-builder-frontend",
+                "_id": "eed61aa2-dd61-48c0-bc36-d187778ab243",
+                "created": null,
+                "techstack": [
+                    "Typescript",
+                    "NodeJS",
+                    "PostgreSQL",
+                    "Angular"
+                ],
+                "display": true
+            },
+            {
+                "title": "Crysta",
+                "display": true,
+                "_id": "f36aa367-5c43-4e88-bb63-3e4bbcadb9e2",
+                "_updatedAt": "2023-01-05T16:23:35Z",
+                "created": null,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "githuburl": "https://github.com/mansoor1998/crysta",
+                "techstack": [
+                    "HTML",
+                    "CSS"
+                ],
+                "featured": false,
+                "liveurl": "https://mansoor1998.github.io/crysta/itFirm/index.html",
+                "image": null
+            },
+            {
+                "_id": "4a287f3f-0053-4bdf-97ab-7fef2c17472f",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel. ",
+                "featured": false,
+                "techstack": [
+                    "React",
+                    "PostgreSQL",
+                    "NodeJs"
+                ],
+                "title": "Movie Manager",
+                "display": true,
+                "_updatedAt": "2023-01-05T16:23:53Z",
+                "created": null,
+                "githuburl": "https://github.com/mansoor1998/MovieManager",
+                "liveurl": null,
+                "image": null
+            },
+            {
+                "display": true,
+                "_updatedAt": "2023-01-05T16:23:11Z",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "githuburl": "https://github.com/mansoor1998/JavaScript-P5",
+                "title": "P5-Project",
+                "techstack": [
+                    "Javascript",
+                    "P5 Library"
+                ],
+                "image": null,
+                "_id": "6a4d33a2-1fc2-45bd-801e-67cf57bd2ab4",
+                "created": null,
+                "featured": false,
+                "liveurl": null
+            },
+            {
+                "liveurl": null,
+                "title": "Resume Builder",
+                "image": null,
+                "_updatedAt": "2023-01-05T16:24:00Z",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "featured": false,
+                "githuburl": "https://github.com/mansoor1998/resume-builder-frontend",
+                "_id": "eed61aa2-dd61-48c0-bc36-d187778ab243",
+                "created": null,
+                "techstack": [
+                    "Typescript",
+                    "NodeJS",
+                    "PostgreSQL",
+                    "Angular"
+                ],
+                "display": true
+            },
+            {
+                "title": "Crysta",
+                "display": true,
+                "_id": "f36aa367-5c43-4e88-bb63-3e4bbcadb9e2",
+                "_updatedAt": "2023-01-05T16:23:35Z",
+                "created": null,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
+                "githuburl": "https://github.com/mansoor1998/crysta",
+                "techstack": [
+                    "HTML",
+                    "CSS"
+                ],
+                "featured": false,
+                "liveurl": "https://mansoor1998.github.io/crysta/itFirm/index.html",
+                "image": null
+            }
+        ],
+        "ms": 26
+    }
+}

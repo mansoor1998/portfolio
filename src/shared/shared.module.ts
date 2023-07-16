@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TabComponent, TablistComponent } from './tablist/tablist.component';
-import { ShowOnScrollDirective, ScrollAppearenceDirective } from './directive/show-on-scroll.directive';
-import { ParaComponent } from './components/para/para.component';
+import {ShowOnScrollDirective, ScrollAppearanceDirective} from './directive/show-on-scroll.directive';
 
 export const appConfig = {
   email: '',
@@ -17,8 +16,7 @@ export const appConfig = {
     TablistComponent,
     TabComponent,
     ShowOnScrollDirective,
-    ScrollAppearenceDirective,
-    ParaComponent
+    ScrollAppearanceDirective,
   ],
   imports: [
     CommonModule,
@@ -27,7 +25,7 @@ export const appConfig = {
     TablistComponent,
     TabComponent,
     ShowOnScrollDirective,
-    ScrollAppearenceDirective
+    ScrollAppearanceDirective,
   ]
 })
 export class SharedModule { }

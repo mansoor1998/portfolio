@@ -58,7 +58,7 @@ export class ShowOnScrollDirective implements OnInit {
  * Content is going to be loaded only when it is appeared in a window screen.
  */
 @Directive({ selector: '[appearOnScroll]' })
-export class ScrollAppearenceDirective {
+export class ScrollAppearanceDirective {
   private hasView = false;
 
   public element: HTMLElement | undefined;

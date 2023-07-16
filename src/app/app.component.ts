@@ -25,13 +25,6 @@ import { appConfig } from 'src/shared/shared.module';
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
   animations: [
-    // trigger('fade', [
-    //   state('void', style({ 'margin-top': '10px', opacity: '0' })),
-    //   state('*', style({ 'margin-top': '0px', opacity: '1' })),
-    //   transition(':enter', [
-    //     animate('0.3s ease-out', style({ opacity: '1', 'margin-top': '0px' }))
-    //   ])
-    // ]),
     fadeTrigger('fade'),
     fadeTrigger('content', totalSplashAnimationDelay + navlistAnimation * 3 + 400),
     listTrigger('30px', totalSplashAnimationDelay + navlistAnimation * 3),
@@ -76,14 +69,10 @@ export class AppComponent {
     setTimeout(() => { document.body.style.overflowY = 'scroll' }, totalSplashAnimationDelay);
 
     this.projects = this.appService.getProjects()
-      .pipe(map(x => {
-        let a = x.result.map(item => {
+      .pipe(map(x =>  x.result.map(item => {
           item.description = this.splitLinks(item.description as string);
           return item;
-        });
-        // console.log(a);
-        return a;
-      }));
+      })));
 
     this.introduction = this.appService.getIntroduction()
       .pipe(map(x => {
@@ -97,9 +86,7 @@ export class AppComponent {
         let result = x.result;
         result = result.map(ex => {
           ex.list! = ex.list.map(item => {
-            item.responsibilites = item.responsibilites.map(x => {
-              return this.splitLinks(x as string)
-            });
+            item.responsibilites = item.responsibilites.map(x => this.splitLinks(x as string));
             return item;
           });
           return ex;
@@ -108,11 +95,12 @@ export class AppComponent {
       }));
 
   }
+
   ngAfterViewInit() {
     this.player?.onDone(() => { this.player?.destroy() })
   }
 
-  // seperate hyperlinks from paragraph and form an array. included patterns [text:hyperlink]
+  // separate hyperlinks from paragraph and form an array. included patterns [text:hyperlink]
   public splitLinks(text: string) {
     let matches = text.match(/\[[\d\w;:\/\.-\s]*\]/g);
     let splits = text.split(/\[[\d\w;:\/\.-\s]*\]/);
@@ -122,25 +110,6 @@ export class AppComponent {
     }
 
     return splits;
-
-    // while ((match = split[text.].match(/\[.*\]/)?.find(x => true, match))) {
-    //   split = text.split(/\[.*\]/);
-    //   split.splice(split?.length - 1, 0, match);
-    // }
-
-    // return split;
-
-    // const result = [''];
-    // for (let word of split) {
-    //   if (this.isHyperLink(word)) {
-    //     result.push(word);
-    //     result.push(' ');
-    //     continue;
-    //   }
-    //   let text: string = word + ' ';
-    //   result[result.length == 0 ? 0 : result.length - 1] += text;
-    // }
-    // return result;
   }
 
   public isHyperLink(text: string) {
@@ -171,20 +140,4 @@ export class AppComponent {
   filterUnfeaturedItems(list: ProjectModel[]) {
     return list.filter(x => !x.featured);
   }
-
-
-  // @HostListener('window:scroll', ['$event'])
-  // onScroll() {
-  //   if (this.animationDone) return;
-  //   const componentPosition = this.otherproject?.nativeElement.offsetTop;
-  //   const scrollPosition = window.pageYOffset + window.innerHeight;
-  //   if (scrollPosition >= componentPosition! + 150) {
-  //     this.show = true;
-  //     // try {
-  //     //   this.player?.play();
-  //     //   this.animationDone = true;
-  //     // } catch (e) { }
-  //     // console.log('whos');
-  //   }
-  // }
 }
