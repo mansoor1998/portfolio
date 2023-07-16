@@ -10,7 +10,7 @@ export class SanityModel<T> {
     public result: T[] = [];
 }
 
-// models 
+// models
 export class ProjectModel {
     title: string = '';
     description: string | string[] = '';
@@ -46,11 +46,17 @@ export class IntroductionModel {
     public tech: string[] = [];
 }
 
+export abstract class AbstractAppService {
+  abstract getProjects(): Observable<SanityModel<ProjectModel>>
+  abstract getExperience(): Observable<SanityModel<ExperiencesModel>>
+  abstract getIntroduction(): Observable<SanityModel<IntroductionModel>>
+}
+
 // services
-@Injectable({
+@Injectable(/*{
     providedIn: 'root'
-})
-export class AppService {
+}*/)
+export class AppService implements AbstractAppService {
     public url: string = appConfig.remoteUrl;
     public constructor(private http: HttpClient) {
     }
@@ -67,8 +73,4 @@ export class AppService {
     public getIntroduction(): Observable<SanityModel<IntroductionModel>> {
         return this.http.get(`${this.url}/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'introduction'%20%26%26%20!(_id%20in%20path(%22drafts.**%22))%5D`) as Observable<SanityModel<IntroductionModel>>;
     }
-
-    // public getIntro(): Observable<void> {
-    //     return this.http.get(`${this.url}/`) as Observable;
-    // }
 }

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    image: portfolio
+    container_name: portfolio-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"

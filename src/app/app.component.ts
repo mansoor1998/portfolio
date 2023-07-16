@@ -6,7 +6,14 @@ import { fadeTrigger, listTrigger, listTriggerQuery } from 'src/shared/animation
 import { navlistAnimation, totalSplashAnimationDelay } from 'src/shared/animation-time';
 
 import { map, filter, tap, delay } from 'rxjs/operators'
-import { ProjectModel, AppService, IntroductionModel, SanityModel, ExperienceModel, ExperiencesModel } from 'src/shared/service/app.service';
+import {
+  ProjectModel,
+  AppService,
+  IntroductionModel,
+  SanityModel,
+  ExperienceModel,
+  ExperiencesModel, AbstractAppService
+} from 'src/shared/service/app.service';
 import { appConfig } from 'src/shared/shared.module';
 
 
@@ -62,7 +69,7 @@ export class AppComponent {
 
   public show = false;
   @ViewChild('otherProjects') otherproject: ElementRef<HTMLElement> | undefined;
-  constructor(private builder: AnimationBuilder, private http: HttpClient, private ref: ChangeDetectorRef, private appService: AppService) { }
+  constructor(private builder: AnimationBuilder, private http: HttpClient, private ref: ChangeDetectorRef, private appService: AbstractAppService) { }
   ngOnInit() {
     console.log("AppComponent Init");
     document.body.style.overflowY = 'hidden';
@@ -74,7 +81,7 @@ export class AppComponent {
           item.description = this.splitLinks(item.description as string);
           return item;
         });
-        console.log(a);
+        // console.log(a);
         return a;
       }));
 
