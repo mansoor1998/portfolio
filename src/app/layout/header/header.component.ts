@@ -4,7 +4,6 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Host
 // import { Router } from '@angular/router';
 import { listTrigger } from 'src/shared/animation';
 import { totalSplashAnimationDelay } from 'src/shared/animation-time';
-import { WindowRef } from 'src/shared/service/window.service';
 import { appConfig } from 'src/shared/shared.module';
 
 

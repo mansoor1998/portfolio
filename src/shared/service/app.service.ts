@@ -45,14 +45,22 @@ export class IntroductionModel {
     public tech: string[] = [];
 }
 
-// abstract service
+/**
+ * The abstract class can be implemented with a child class to define the following functions
+ */
 export abstract class AbstractAppService {
   abstract getProjects(): Observable<SanityModel<ProjectModel>>
   abstract getExperience(): Observable<SanityModel<ExperiencesModel>>
   abstract getIntroduction(): Observable<SanityModel<IntroductionModel>>
 }
 
-// services
+/**
+ * This class is used with Angular DI to get instance of this service.
+ * you can create another service with the following requirements
+ *  - AbstractAppService is inherited/implemented
+ *  - class is decorated with @Injectable decorator.
+ *  - add the new class to the providers w.r.t AbstractAppService (an interface or abstract class)
+ */
 @Injectable()
 export class AppService implements AbstractAppService {
     public url: string = appConfig.remoteUrl;

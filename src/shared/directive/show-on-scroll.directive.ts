@@ -10,7 +10,9 @@ function onScroll(element: HTMLElement) {
 }
 
 
-
+/**
+ * On window scroll to target, element reveals and animates via Angular animations.
+ */
 @Directive({
   selector: '[scrollAnimation]'
 })
@@ -49,13 +51,8 @@ export class ShowOnScrollDirective implements OnInit {
 
 }
 
-
-
-
-
-
 /**
- * Content is going to be loaded only when it is appeared in a window screen.
+ * On window scroll to target, element is created via viewContainerRef in the same position it is declared/instanced.
  */
 @Directive({ selector: '[appearOnScroll]' })
 export class ScrollAppearanceDirective {
@@ -80,7 +77,6 @@ export class ScrollAppearanceDirective {
     if (this.hasView) return;
     if (onScroll(this.element!)) {
       try {
-        // this.onAppearence.emit();
         this.viewContainer.createEmbeddedView(this.templateRef);
         this.hasView = true;
       } catch (e) { }
