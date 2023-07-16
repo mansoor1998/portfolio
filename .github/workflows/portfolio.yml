@@ -26,13 +26,13 @@ jobs:
           tokenSuffix: '}'
           files: 'src/environment.prod.ts'
         env:
-          SECRET_API_KEY: ${{ secrets.API_KEY}}
+          SECRET_API_KEY: ${{secrets.API_KEY}}
 
       - name: Build
         run: npm run build:prod
 
       - name: Deploy to GitHub Pages
-        uses: mansoor1998/portfolio@v3
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
           build_dir: dist
