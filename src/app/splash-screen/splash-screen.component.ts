@@ -44,7 +44,6 @@ export class SplashScreenComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // this animation is played first
     const dashAnimation = this.animationBuilder.build([
       animate(`${dashAnimationTime}ms ease-in-out`, keyframes([
         style({ 'fill-opacity': '0', 'stroke-dashoffset': '300', offset: 0 }),
@@ -52,8 +51,6 @@ export class SplashScreenComponent implements OnInit {
       ]))
     ]);
 
-    // text fade animation is played second
-    // animation delay 1500ms, if exist
     const fadeTextAnimation =  this.animationBuilder.build([
       animate(`${fadeTextAnimationTime}ms ease-in-out`, keyframes([
         style({ 'opacity': '0', 'z-index': '999999999' }),
@@ -61,10 +58,9 @@ export class SplashScreenComponent implements OnInit {
       ]))
     ]);
 
-    // this animation is played at last place
-    // animation delay 2700ms if exist
+
     const scaleOutAnimation = this.animationBuilder.build([
-        // animation delay to added to show the logo to user for some time
+        // animation delay, to keep the logo on screen
         animate(`${scaleOutAnimationTime}ms 200ms ease-in-out`, keyframes([
           style({ 'transform': 'translateX(-50%) translateY(-50%) scale(1)', offset: 0 }),
           style({ 'transform': 'translateX(-50%) translateY(-50%) scale(1.2)', offset: 0.25 }),
