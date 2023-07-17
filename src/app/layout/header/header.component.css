@@ -6,15 +6,14 @@ header {
     left: 0;
     transition: top 200ms, height 100ms;
     z-index: 100000;
-    /* transition: top 300ms ease; */
 }
 
 .header-scroll {
     box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
     height: 70px
 }
-  
-  
+
+
  .menu ul {
   list-style-type: none;
   gap: 30px;
@@ -26,7 +25,7 @@ header {
   color: var(--props-color);
   margin-right: 4px;
 }
-  
+
  .menu ul li a{
   cursor: pointer;
   transition: color 100ms ease-out;
@@ -44,7 +43,7 @@ header {
 
  .menu ul li button:hover, .p-button:hover {
   background-color: rgba(100, 255, 218, 0.3);
-} 
+}
 
 
  .menu ul li a:hover {
@@ -54,56 +53,8 @@ header {
   color: #000;
 }
 
-/* .nested-menu-bar {
-
-  --nested-menu-bar-top-pos: 35px;
-
-  position: absolute;
-  padding: 10px;
-  background-color: white;
-  list-style-type: none;
-  border-radius: 5px;
-  top: var(--nested-menu-bar-top-pos);
-  left: -5px;
-  visibility: hidden;
-  transition: opacity 200ms ease;
-  transition-delay: 100ms;
-  opacity: 0;
-}
-
-#main-menu .menu-bar .menu-item:hover > .nested-menu-bar {
-  visibility: visible;
-  opacity: 1;
-} */
-
-
-/* .login-btn {
-  color: #fff;
-  border: none;
-  background-color: transparent;
-  font-size: 1.2em;
-  position: relative;
-}
-
-.login-btn::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  border-radius: 4px;
-  height: 2px;
-  background-color: #fff;
-  width: 0;
-  transition: width 100ms ease-in-out;
-}
-
-.login-btn:hover::after {
-  width: 100%;
-} */
-
-
 /* side nav bar */
-/* all css is the side nav */
+/* entire css is the side nav */
 .nav-overlay {
   z-index: 1000000000;
   position: fixed;
@@ -191,8 +142,8 @@ header {
     display: block;
     opacity: 1;
   }
-  
-  .nav-overlay, 
+
+  .nav-overlay,
   .side-navbar {
     display: block;
   }
@@ -201,4 +152,3 @@ header {
     right: 0px;
   }
 }
-  

@@ -6,9 +6,6 @@ import { listTrigger } from 'src/shared/animation';
 import { totalSplashAnimationDelay } from 'src/shared/animation-time';
 import { appConfig } from 'src/shared/shared.module';
 
-
-// const animationDelay = `${3200 + 400}ms`;
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -59,7 +56,7 @@ export class HeaderComponent implements OnInit {
     this.navbarHeight = this.header.offsetHeight;
 
     // here prevscroll position is current scroll postion.
-    this.show = (this.prevScrollpos > this.navbarHeight) ? true : false;
+    this.show = (this.prevScrollpos > this.navbarHeight);
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -75,8 +72,7 @@ export class HeaderComponent implements OnInit {
 
 
     // scroll bar is on top
-    // console.log(currentScrollPos, this.navbarHeight)
-    this.show = (currentScrollPos > this.navbarHeight) ? true : false
+    this.show = (currentScrollPos > this.navbarHeight);
 
     this.prevScrollpos = currentScrollPos;
   }

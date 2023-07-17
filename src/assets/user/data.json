@@ -197,7 +197,7 @@
                 "_id": "9492472e-4784-4254-b1a5-b140c6821a3a",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
                 "featured": true,
-                "title": "Commerce PK",
+                "title": "Lorem Ipsum",
                 "image": "https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2018/09/how-to-design-a-website-21.png",
                 "display": null,
                 "_updatedAt": "2022-04-02T11:30:49Z",
@@ -219,18 +219,18 @@
                 "_id": "c661ef12-0812-4848-a06c-7655aebf1cd1",
                 "_updatedAt": "2023-01-22T21:02:22Z",
                 "featured": true,
-                "title": "Safety Guard App"
+                "title": "Lorem Ipsum"
             },
             {
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
                 "featured": false,
-                "liveurl": "https://mansoor1998.github.io/PMS",
+                "liveurl": "https://www.example.com",
                 "title": "Pharmacy Management System",
                 "display": true,
                 "_id": "0ed93dcc-f1fd-4346-bc09-83d6fcb68df4",
                 "_updatedAt": "2023-05-23T07:27:42Z",
                 "created": null,
-                "githuburl": "https://github.com/mansoor1998/PMS",
+                "githuburl": "https://www.example.com",
                 "techstack": [
                     "Angular 12+",
                     "DotNet Core",
@@ -247,11 +247,11 @@
                     "PostgreSQL",
                     "NodeJs"
                 ],
-                "title": "Movie Manager",
+                "title": "Lorem Ipsum",
                 "display": true,
                 "_updatedAt": "2023-01-05T16:23:53Z",
                 "created": null,
-                "githuburl": "https://github.com/mansoor1998/MovieManager",
+                "githuburl": "https://www.example.com",
                 "liveurl": null,
                 "image": null
             },
@@ -259,8 +259,8 @@
                 "display": true,
                 "_updatedAt": "2023-01-05T16:23:11Z",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
-                "githuburl": "https://github.com/mansoor1998/JavaScript-P5",
-                "title": "P5-Project",
+                "githuburl": "https://www.example.com",
+                "title": "Lorem Ipsum",
                 "techstack": [
                     "Javascript",
                     "P5 Library"
@@ -273,12 +273,12 @@
             },
             {
                 "liveurl": null,
-                "title": "Resume Builder",
+                "title": "Lorem Ipsum",
                 "image": null,
                 "_updatedAt": "2023-01-05T16:24:00Z",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
                 "featured": false,
-                "githuburl": "https://github.com/mansoor1998/resume-builder-frontend",
+                "githuburl": "https://www.example.com",
                 "_id": "eed61aa2-dd61-48c0-bc36-d187778ab243",
                 "created": null,
                 "techstack": [
@@ -290,19 +290,19 @@
                 "display": true
             },
             {
-                "title": "Crysta",
+                "title": "Lorem Ipsum",
                 "display": true,
                 "_id": "f36aa367-5c43-4e88-bb63-3e4bbcadb9e2",
                 "_updatedAt": "2023-01-05T16:23:35Z",
                 "created": null,
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
-                "githuburl": "https://github.com/mansoor1998/crysta",
+                "githuburl": "https://www.example.com",
                 "techstack": [
                     "HTML",
                     "CSS"
                 ],
                 "featured": false,
-                "liveurl": "https://mansoor1998.github.io/crysta/itFirm/index.html",
+                "liveurl": "https://www.example.com",
                 "image": null
             },
             {
@@ -314,11 +314,11 @@
                     "PostgreSQL",
                     "NodeJs"
                 ],
-                "title": "Movie Manager",
+                "title": "Lorem Ipsum",
                 "display": true,
                 "_updatedAt": "2023-01-05T16:23:53Z",
                 "created": null,
-                "githuburl": "https://github.com/mansoor1998/MovieManager",
+                "githuburl": "https://www.example.com",
                 "liveurl": null,
                 "image": null
             },
@@ -326,8 +326,8 @@
                 "display": true,
                 "_updatedAt": "2023-01-05T16:23:11Z",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
-                "githuburl": "https://github.com/mansoor1998/JavaScript-P5",
-                "title": "P5-Project",
+                "githuburl": "https://www.example.com",
+                "title": "Lorem Ipsum",
                 "techstack": [
                     "Javascript",
                     "P5 Library"
@@ -340,12 +340,12 @@
             },
             {
                 "liveurl": null,
-                "title": "Resume Builder",
+                "title": "Lorem Ipsum",
                 "image": null,
                 "_updatedAt": "2023-01-05T16:24:00Z",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
                 "featured": false,
-                "githuburl": "https://github.com/mansoor1998/resume-builder-frontend",
+                "githuburl": "https://www.example.com",
                 "_id": "eed61aa2-dd61-48c0-bc36-d187778ab243",
                 "created": null,
                 "techstack": [
@@ -357,19 +357,19 @@
                 "display": true
             },
             {
-                "title": "Crysta",
+                "title": "Lorem Ipsum",
                 "display": true,
                 "_id": "f36aa367-5c43-4e88-bb63-3e4bbcadb9e2",
                 "_updatedAt": "2023-01-05T16:23:35Z",
                 "created": null,
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
-                "githuburl": "https://github.com/mansoor1998/crysta",
+                "githuburl": "https://www.example.com",
                 "techstack": [
                     "HTML",
                     "CSS"
                 ],
                 "featured": false,
-                "liveurl": "https://mansoor1998.github.io/crysta/itFirm/index.html",
+                "liveurl": "https://www.example.com",
                 "image": null
             },
             {
@@ -381,11 +381,11 @@
                     "PostgreSQL",
                     "NodeJs"
                 ],
-                "title": "Movie Manager",
+                "title": "Lorem Ipsum",
                 "display": true,
                 "_updatedAt": "2023-01-05T16:23:53Z",
                 "created": null,
-                "githuburl": "https://github.com/mansoor1998/MovieManager",
+                "githuburl": "https://www.example.com",
                 "liveurl": null,
                 "image": null
             },
@@ -393,8 +393,8 @@
                 "display": true,
                 "_updatedAt": "2023-01-05T16:23:11Z",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
-                "githuburl": "https://github.com/mansoor1998/JavaScript-P5",
-                "title": "P5-Project",
+                "githuburl": "https://www.example.com",
+                "title": "Lorem Ipsum",
                 "techstack": [
                     "Javascript",
                     "P5 Library"
@@ -407,12 +407,12 @@
             },
             {
                 "liveurl": null,
-                "title": "Resume Builder",
+                "title": "Lorem Ipsum",
                 "image": null,
                 "_updatedAt": "2023-01-05T16:24:00Z",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
                 "featured": false,
-                "githuburl": "https://github.com/mansoor1998/resume-builder-frontend",
+                "githuburl": "https://www.example.com",
                 "_id": "eed61aa2-dd61-48c0-bc36-d187778ab243",
                 "created": null,
                 "techstack": [
@@ -424,19 +424,19 @@
                 "display": true
             },
             {
-                "title": "Crysta",
+                "title": "Lorem Ipsum",
                 "display": true,
                 "_id": "f36aa367-5c43-4e88-bb63-3e4bbcadb9e2",
                 "_updatedAt": "2023-01-05T16:23:35Z",
                 "created": null,
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
-                "githuburl": "https://github.com/mansoor1998/crysta",
+                "githuburl": "https://www.example.com",
                 "techstack": [
                     "HTML",
                     "CSS"
                 ],
                 "featured": false,
-                "liveurl": "https://mansoor1998.github.io/crysta/itFirm/index.html",
+                "liveurl": "https://.github.io/crysta/itFirm/index.html",
                 "image": null
             },
             {
@@ -448,11 +448,11 @@
                     "PostgreSQL",
                     "NodeJs"
                 ],
-                "title": "Movie Manager",
+                "title": "Lorem Ipsum",
                 "display": true,
                 "_updatedAt": "2023-01-05T16:23:53Z",
                 "created": null,
-                "githuburl": "https://github.com/mansoor1998/MovieManager",
+                "githuburl": "https://www.example.com",
                 "liveurl": null,
                 "image": null
             },
@@ -460,8 +460,8 @@
                 "display": true,
                 "_updatedAt": "2023-01-05T16:23:11Z",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
-                "githuburl": "https://github.com/mansoor1998/JavaScript-P5",
-                "title": "P5-Project",
+                "githuburl": "https://www.example.com",
+                "title": "Lorem Ipsum",
                 "techstack": [
                     "Javascript",
                     "P5 Library"
@@ -474,12 +474,12 @@
             },
             {
                 "liveurl": null,
-                "title": "Resume Builder",
+                "title": "Lorem Ipsum",
                 "image": null,
                 "_updatedAt": "2023-01-05T16:24:00Z",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
                 "featured": false,
-                "githuburl": "https://github.com/mansoor1998/resume-builder-frontend",
+                "githuburl": "https://www.example.com",
                 "_id": "eed61aa2-dd61-48c0-bc36-d187778ab243",
                 "created": null,
                 "techstack": [
@@ -491,19 +491,19 @@
                 "display": true
             },
             {
-                "title": "Crysta",
+                "title": "Lorem Ipsum",
                 "display": true,
                 "_id": "f36aa367-5c43-4e88-bb63-3e4bbcadb9e2",
                 "_updatedAt": "2023-01-05T16:23:35Z",
                 "created": null,
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel euismod turpis. [Maecenas;https://www.example.com] feugiat laoreet sapien, sit amet congue nunc dignissim vel.",
-                "githuburl": "https://github.com/mansoor1998/crysta",
+                "githuburl": "https://www.example.com",
                 "techstack": [
                     "HTML",
                     "CSS"
                 ],
                 "featured": false,
-                "liveurl": "https://mansoor1998.github.io/crysta/itFirm/index.html",
+                "liveurl": "https://www.example.com",
                 "image": null
             }
         ],

@@ -13,7 +13,7 @@ import {
   dashAnimationTime,
   fadeTextAnimationTime, scaleOutAnimationTime,
   splashAnimation,
-  splashAnimationDelay
+  totalSplashAnimationDelay
 } from 'src/shared/animation-time';
 
 
@@ -26,7 +26,7 @@ import {
       state('void', style({ opacity: '1' })),
       state('*', style({ opacity: '0' })),
       transition(':enter', [
-        animate(`${splashAnimation}ms ${splashAnimationDelay}ms ease-out`, style({ opacity: '0' }))
+        animate(`${splashAnimation}ms ${totalSplashAnimationDelay}ms ease-out`, style({ opacity: '0' }))
       ])
     ])
   ]

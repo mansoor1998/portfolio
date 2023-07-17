@@ -40,7 +40,6 @@ function appInitializerFactory(injector: Injector) {
     BrowserAnimationsModule,
     SharedModule,
     HttpClientModule,
-    // AppRoutingModule
   ],
   providers: [
     {
@@ -59,17 +58,4 @@ function appInitializerFactory(injector: Injector) {
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  // constructor(applicationRef: ApplicationRef) {
-  //   const originalTick = applicationRef.tick;
-  //
-  //   applicationRef.tick = function () {
-  //     const windowPerformance = window.performance;
-  //     const before = windowPerformance.now();
-  //     const retValue = originalTick.call(this);
-  //     const after = windowPerformance.now();
-  //     const runTime = after - before
-  //     console.log('Change detection run time : ', runTime);
-  //     return retValue;
-  //   }
-  // }
 }

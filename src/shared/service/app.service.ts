@@ -55,7 +55,7 @@ export abstract class AbstractAppService {
 }
 
 /**
- * This class is used with Angular DI to get instance of this service.
+ * This class is used with Angular DI to get an instance of this service.
  * you can create another service with the following requirements
  *  - AbstractAppService is inherited/implemented
  *  - class is decorated with @Injectable decorator.
