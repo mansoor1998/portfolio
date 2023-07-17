@@ -1,7 +1,13 @@
+# populate all the variables according to your needs.
+# add the secretes on github repo -> settings -> secrets and variables
+
 name: CI / CD for Angular
 on:
   push:
     branches: [ "main" ]
+
+env:
+  GITHUB_BRANCH: gh-pages
 
 jobs:
   build-and-deploy:
@@ -19,22 +25,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Replace secret
-        uses: cschleiden/replace-tokens@v1
-        with:
-          tokenPrefix: '{'
-          tokenSuffix: '}'
-          files: 'src/environment.prod.ts'
-        env:
-          SECRET_API_KEY: ${{secrets.API_KEY}}
-
       - name: Build
         run: npm run build:prod
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          target_branch: gh-pages
+          target_branch: $GITHUB_BRANCH
           build_dir: dist
         env:
+#          GitHub repo token
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

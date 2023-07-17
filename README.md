@@ -11,6 +11,8 @@ A minimalistic and customizable dockerized portfolio that can be used for any pr
 - splash screen and logo
 - page section include, About, Experience, Work, Contact
 - option to add resume in assets/resume directory
+- integrated with Dockerfile
+- integrated with GitHub Actions Workflow
 - and much more
 
 ## Docker
@@ -25,6 +27,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## GitHub Actions
+
+You can deploy your application with **GitHub Actions** workflow in .github/workflows/portfolio.yml.
+
+for the workflow to work, you have to add `GITHUB_TOKEN` secrets 
+- `GITHUB_TOKEN`: token used as password to deploy build to branch
 
 ## Further help
 
