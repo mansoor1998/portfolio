@@ -72,21 +72,6 @@ export class SplashScreenComponent implements OnInit {
         ]))
     ]);
 
-
-    // // this is known as the callback hell.
-    // var animation = dashAnimation.create(this.svgPath.nativeElement)
-    // animation.play();
-    // animation.onDone(() => {
-    //   animation = fadeTextAnimation.create(this.svgText.nativeElement);
-    //   animation.play();
-    //   animation.onDone(() => {
-    //     animation = scaleOutAnimation.create(this.svgElement.nativeElement);
-    //     animation.play();
-    //     animation.onDone(() => {
-    //     })
-    //   })
-    // })
-
     // animations played one after the other
     (async () => {
       await this.makeAnimation(dashAnimation.create(this.svgPath.nativeElement))
